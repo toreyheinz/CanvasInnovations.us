@@ -1,9 +1,13 @@
-wagon generate content_type offering_types title:string description:text event_date:date
+wagon generate content_type offering_types title:string featured_image:file description:text offerings:has_many
+wagon generate content_type offerings title:string featured_image:file description:text offering_type:belongs_to projects:many_to_many
+wagon generate content_type projects title:string featured_image:file description:text offerings:many_to_many project_images:has_many
+wagon generate content_type project_images title:string file:file  project:belongs_to
 
 
 OfferingTypes:
   title:string
   featured_image:file
+  description:text
   has_many:offerings
 
 
@@ -11,7 +15,7 @@ Offerings:
   title:string
   featured_image:file
   belongs_to:offering-type
-  has_many:projects
+  many_to_many:projects
 
 Features:
   - Bonded Windows
@@ -23,7 +27,7 @@ Projects:
   featured_image:file
   description:text
   has_many:project_images
-  belongs_to:offering
+  many_to_many:offerings
 
 ProjectImages:
   title:string

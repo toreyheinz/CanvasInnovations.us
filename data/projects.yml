@@ -1,0 +1,16 @@
+- "Sample 1":
+    # featured_image: /samples/projects/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Ex in est est qui quaerat doloremque et. Sint architecto eveniet qui est ut quis eos. Nihil praesentium iste. Nobis reiciendis dolores. Error cumque culpa optio qui."
+
+- "Sample 2":
+    # featured_image: /samples/projects/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Voluptates quas ullam. Autem quam ex iste vel. Enim molestias autem expedita."
+
+- "Sample 3":
+    # featured_image: /samples/projects/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Quia maxime ut magni. Maiores illo autem et sequi. Tempore magni consequuntur aut sunt doloribus dolorem perspiciatis."
+
+- "Sample 4":
+    # featured_image: /samples/projects/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Tenetur corporis quos dolorem qui reprehenderit. Alias velit facilis molestias ut eius sit. Quaerat ab minus iste. Voluptate sed iste possimus. Adipisci illo eum."
+
