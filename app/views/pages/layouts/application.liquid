@@ -1,0 +1,56 @@
+---
+title: Application
+slug: application
+position: 99
+listed: false
+published: false
+is_layout: true
+---
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% include 'metatags' %}
+    {{ 'app.css' | stylesheet_tag }}
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107293990-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', 'UA-107293990-1');
+    </script>
+
+  </head>
+  <body class="{{ page.slug }}">
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          {% include 'dropdown-menu' %}
+        </div>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <div class="wrapper row column">
+      <div class="callout large">
+        <div class="row column text-center">
+          <h1>
+            Canvas Innovations
+          </h1>
+          <p class="lead">West Michigan's premier shop for all your canvas and upholstery needs.</p>
+        </div>
+      </div>
+      <div class="">
+        {% block main %}
+          <h1>{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}{% endeditable_text %}</h1>
+          {% editable_text content %}Lorem ipsum{% endeditable_text %}
+        {% endblock %}
+      </div>
+    </div>
+    <script  src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    {{ 'vendor/jquery.sticky.js'  | javascript_tag }}
+    {{ 'vendor/what-input.min.js' | javascript_tag }}
+    {{ 'vendor/foundation.min.js' | javascript_tag }}
+    {{ 'app.js'                   | javascript_tag }}
+  </body>
+</html>

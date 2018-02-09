@@ -1,0 +1,48 @@
+wagon generate content_type offering_types title:string description:text event_date:date
+
+
+OfferingTypes:
+  title:string
+  featured_image:file
+  has_many:offerings
+
+
+Offerings:
+  title:string
+  featured_image:file
+  belongs_to:offering-type
+  has_many:projects
+
+Features:
+  - Bonded Windows
+  - Custom Frame Bending
+  - Track
+
+Projects:
+  title:string
+  featured_image:file
+  description:text
+  has_many:project_images
+  belongs_to:offering
+
+ProjectImages:
+  title:string
+  file:file
+  belongs_to:project
+
+
+DATA:
+OfferingTypes:
+  - Boat Flooring
+    - InteriorCarpet
+    - Sea Deck
+    - Infinity
+  - Boat Enclosures
+
+  - Commercial Sewing
+  - Boat Tops
+  - Boat Covers
+  - Boat Dodgers
+  - Upholstery
+  - Headliners
+  - Repairs and Restitching

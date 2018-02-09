@@ -1,0 +1,17 @@
+{% if page.seo_title %}
+  {% capture page_title %}{{ page.seo_title | escape }} | {{ site.name }}{% endcapture %}
+{% else %}
+  {% capture page_title %}{{ page.title | escape }} | {{ site.name }}{% endcapture %}
+{% endif %}
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page_title }}</title>
+{% seo %}
+<meta property="og:title" content="{{ page.title | escape }} | VS America" />
+<meta property="og:image" content="{{ 'logo.png' | theme_image_url }}" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<link rel="shortcut icon" href="{{ 'favicon.ico' | theme_image_url }}">
+

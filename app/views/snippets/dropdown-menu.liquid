@@ -1,0 +1,18 @@
+<ul class="dropdown menu" data-dropdown-menu data-alignment="left">
+  <li class="menu-text">Canvas Innovations</li>
+  <li><a href="/">Home</a></li>
+  {% for page in site.pages %}
+    {% if page.depth == 1 and page.listed? %}
+      <li>
+        {% link_to page %}
+        {% unless page.children.size == 0 %}
+          <ul class="menu">
+            {% for subpage in page.children %}
+              <li>{% link_to subpage %}</li>
+            {% endfor %}
+          </ul>
+        {% endunless %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
