@@ -1,7 +1,7 @@
-wagon generate content_type offering_types title:string featured_image:file description:text offerings:has_many
-wagon generate content_type offerings title:string featured_image:file description:text offering_type:belongs_to projects:many_to_many
-wagon generate content_type projects title:string featured_image:file description:text offerings:many_to_many project_images:has_many
-wagon generate content_type project_images title:string file:file  project:belongs_to
+be wagon generate content_type offering_types title:string featured_image:file description:text
+be wagon generate content_type offerings title:string featured_image:file description:text
+be wagon generate content_type projects title:string featured_image:file description:text
+be wagon generate content_type project_images title:string file:file
 
 
 OfferingTypes:
@@ -17,10 +17,6 @@ Offerings:
   belongs_to:offering-type
   many_to_many:projects
 
-Features:
-  - Bonded Windows
-  - Custom Frame Bending
-  - Track
 
 Projects:
   title:string
@@ -36,17 +32,20 @@ ProjectImages:
 
 
 DATA:
-OfferingTypes:
-  - Boat Flooring
-    - InteriorCarpet
-    - Sea Deck
-    - Infinity
-  - Boat Enclosures
-
-  - Commercial Sewing
-  - Boat Tops
+Services:
   - Boat Covers
   - Boat Dodgers
-  - Upholstery
+  - Boat Enclosures
+  - Boat Tops
+  - Commercial Sewing
   - Headliners
+  - Infinity Deck Flooring
+  - Interior Carpet Floring
   - Repairs and Restitching
+  - Sea Deck Flooring
+  - Upholstery
+
+Features:
+  - Bonded Windows
+  - Custom Frame Bending
+  - Track

@@ -37,12 +37,11 @@ order_by: manually
 
 # A list describing each field
 fields:
-- title: # The lowercase, underscored name of the field
-    label: Title # Human readable name of the field
-    type: string
-    required: true
-    hint: Explanatory text displayed in the back office
-    localized: false
+- project:
+    label: Project
+    type: belongs_to
+    class_name: projects
+    inverse_of: images
 
 - file: # The lowercase, underscored name of the field
     label: File # Human readable name of the field
@@ -51,9 +50,16 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- project:
-    label: Project
-    type: belongs_to
+- category:
+    label: Category
+    type: select
     required: true
-    class_name: projects
-    ui_enabled: true
+    select_options: ['Before', 'After']
+
+- title: # The lowercase, underscored name of the field
+    label: Title # Human readable name of the field
+    type: string
+    hint: Explanatory text displayed in the back office
+    localized: false
+
+

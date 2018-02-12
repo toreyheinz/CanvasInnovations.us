@@ -10,42 +10,21 @@ is_layout: false
 {% block 'main' %}
   <div class="callout small">
     <div class="row">
-      <div class="columns large-4">
-        <div class="card">
-          <div class="card-divider">
-            This is a header
+      {% with_scope featured: true %}
+        {% for service in contents.services %}
+          <div class="columns large-4">
+            <div class="card">
+              <div class="card-divider">
+                <a href="{% path_to service %}">{{ service.title }}</a>
+              </div>
+              <img src="http://via.placeholder.com/450x150">
+              <div class="card-section">
+                {{ service.brief }}
+              </div>
+            </div>
           </div>
-          <img src="assets/img/generic/rectangle-1.jpg">
-          <div class="card-section">
-            <h4>This is a card.</h4>
-            <p>It has an easy to override visual style, and is appropriately subdued.</p>
-          </div>
-        </div>
-      </div>
-      <div class="columns large-4">
-        <div class="card">
-          <div class="card-divider">
-            This is a header
-          </div>
-          <img src="assets/img/generic/rectangle-1.jpg">
-          <div class="card-section">
-            <h4>This is a card.</h4>
-            <p>It has an easy to override visual style, and is appropriately subdued.</p>
-          </div>
-        </div>
-      </div>
-      <div class="columns large-4">
-        <div class="card">
-          <div class="card-divider">
-            This is a header
-          </div>
-          <img src="assets/img/generic/rectangle-1.jpg">
-          <div class="card-section">
-            <h4>This is a card.</h4>
-            <p>It has an easy to override visual style, and is appropriately subdued.</p>
-          </div>
-        </div>
-      </div>
+        {% endfor %}
+      {% endwith_scope %}
     </div>
   </div>
 {% endblock %}

@@ -1,12 +1,19 @@
-- "Sample 1":
-    # file: /samples/project_images/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+- "Project Image 1":
+    project: project-1
+    category: Before
+    file: /samples/000_0018.jpg
 
-- "Sample 2":
-    # file: /samples/project_images/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+- "Project Image 2":
+    project: project-1
+    category: Before
+    file: /samples/000_0019.jpg
 
-- "Sample 3":
-    # file: /samples/project_images/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+- "Project Image 3":
+    project: project-1
+    category: After
+    file: /samples/000_0026.jpg
 
-- "Sample 4":
-    # file: /samples/project_images/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
-
+- "Project Image 4":
+    project: project-1
+    category: After
+    file: /samples/000_0028.jpg

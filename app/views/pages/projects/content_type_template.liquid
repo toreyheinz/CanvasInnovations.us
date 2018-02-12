@@ -1,0 +1,40 @@
+---
+title: Project Template Page
+content_type: projects
+is_layout: true
+---
+{% extends 'layouts/application' %}
+{% block main %}
+  <h1>{{ project.title }}</h1>
+  {{ project.description }}
+  <ul>
+    {% for service in project.services %}
+      <li><a href="{% path_to service %}">{{ service.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+
+  {% assign categories = 'Before,After' | split: ','] %}
+  <div class="row">
+    {% for category in categories %}
+      <div class="columns large-6">
+        <p><strong>{{ category }} Pics:</strong></p>
+        <div class="row small-up-2">
+          {% with_scope category: category %}
+            {% for image in project.images %}
+              <div class="column column-block">
+                <div class="card">
+                  <div class="card-divider">
+                    {{ image.title }}
+                  </div>
+                  <img src="{{ image.file.url }}">
+                </div>
+              </div>
+            {% endfor %}
+          {% endwith_scope %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+

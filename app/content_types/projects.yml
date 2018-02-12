@@ -58,15 +58,16 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
+
 - images:
-    label: images
+    label: Images
     type: has_many
     class_name: project_images
     inverse_of: project
-    ui_enabled: true
 
-- offerings:
-    label: offerings
+- services:
+    label: Services
     type: many_to_many
-    class_name: offerings
+    class_name: services
     inverse_of: projects
+
