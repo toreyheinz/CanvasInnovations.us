@@ -1,5 +1,12 @@
 @charset 'utf-8';
 
+@font-face {
+  font-family: 'Brixton';
+  src:
+    font-url('/fonts/Brixton.woff')  format('woff'),
+    font-url('/fonts/Brixton.ttf')  format('truetype');
+}
+
 @import 'settings';
 @import 'foundation6/foundation';
 
@@ -45,24 +52,43 @@
 
 body, html {
     height: 100%;
-    background: none;
+    background: $white;
 }
 
-html {
-  background: image-url('/images/body-bg.jpg') no-repeat center center fixed;
+header {
+  position: relative;
+  background: image-url('/images/header-bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 
-div.wrapper {
-  background: #fff;
-  padding-top: rem-calc(10);
-}
+  color: $white;
 
-body.index {
-  .row {
-    // max-width: rem-calc(1200);
+  .content {
+    // @include vertical-center;
+  }
+
+  @include breakpoint(small) {
+    height: rem-calc(200);
+  }
+
+  @include breakpoint(large) {
+    height: rem-calc(400);
+    .content {
+      // top: 25%;
+    }
+
+    h1 {
+      // font-size: 80px;
+      text-transform: uppercase;
+      font-size: rem-calc(60);
+    }
   }
 }
+
+.lead {
+  font-family: $header-font-family;
+}
+
+@import "featured_services";

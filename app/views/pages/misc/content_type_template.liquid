@@ -4,6 +4,7 @@ content_type: services
 ---
 {% extends 'layouts/application' %}
 {% block main %}
+  <p>{{ params }}</p>
   <div class="card">
     <img src="{{ service.featured_image.url | resize: '1200x400#' }}">
   </div>

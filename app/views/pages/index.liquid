@@ -8,17 +8,26 @@ is_layout: false
 ---
 {% extends 'layouts/application' %}
 {% block 'main' %}
-  <div class="callout small">
-    <div class="row">
+  <header>
+    <div class="content row column text-center">
+        <h1>
+          Canvas Innovations
+        </h1>
+        <p>West Michigan's Premier Shop for All Your Canvas and Upholstery Needs.</p>
+    </div>
+  </header>
+  <section class="featured-services" >
+    <div class="row" data-equalizer data-equalize-on="medium">
       {% with_scope featured: true %}
         {% for service in contents.services %}
-          <div class="columns large-4">
-            <div class="card">
+          <div class="columns medium-4">
+            <div class="card text-center">
               <div class="card-divider">
-                <a href="{% path_to service %}">{{ service.title }}</a>
+                <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
+
               </div>
-              <img src="http://via.placeholder.com/450x150">
-              <div class="card-section">
+              <img src="http://via.placeholder.com/650x250">
+              <div class="card-section" data-equalizer-watch>
                 {{ service.brief }}
               </div>
             </div>
@@ -26,5 +35,5 @@ is_layout: false
         {% endfor %}
       {% endwith_scope %}
     </div>
-  </div>
+  </section>
 {% endblock %}

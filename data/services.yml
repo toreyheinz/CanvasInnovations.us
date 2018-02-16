@@ -1,21 +1,49 @@
-- "Commerical Sewing":
+- "Contract Sewing":
     brief: "Nam molestiae ipsa non iure sint architecto doloribus"
     featured: true
     # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
     description: "Nam molestiae ipsa non iure sint architecto doloribus. Odio non quisquam consectetur delectus natus. Magnam iure aliquid fuga sequi harum qui et. Consequuntur autem eligendi explicabo ratione."
 
 - "Boat Enclosures":
-    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    featured_image: /samples/100_1304.jpg # Path to a file in the public/samples folder or to a remote and external file.
     brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
     featured: true
     description: "Id vel expedita asperiores. Explicabo doloremque aliquid. Quod non itaque voluptate libero dicta. Aut quis impedit."
-    projects: [sample-1, sample-2, sample-3]
+    projects: [project-1, project-2, project-3]
 
 - "Boat Flooring":
     # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
     brief: "Enim officia ipsa sunt. Officiis voluptatum doloribus."
     featured: true
     description: "Enim officia ipsa sunt. Officiis voluptatum doloribus. Error architecto asperiores ut voluptas veritatis. Velit doloribus saepe soluta aut."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+
+- "Sample 4":
+    # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
 
 - "Sample 4":
     # featured_image: /samples/offering_types/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.

@@ -1,0 +1,13 @@
+.featured-services {
+  margin-top: rem-calc(10);
+
+  .card {
+    .card-divider {
+      text-transform: uppercase;
+      background: none;
+      a {
+        color: $black;
+      }
+    }
+  }
+}
