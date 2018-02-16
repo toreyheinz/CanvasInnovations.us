@@ -25,9 +25,11 @@ is_layout: true
   <body class="{{ page.slug }}">
     <!-- Start Top Bar -->
     <div class="top-bar">
-      <div class="row">
+      <div class="row column">
         <div class="top-bar-left">
-          <img src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '125x87'}}" width="125" height="87" alt="Canvas Innovations Logo">
+          <div class="logo">
+            <img src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '125x87'}}" width="125" height="87" alt="Canvas Innovations Logo">
+          </div>
         </div>
 
         <div class="top-bar-right">
