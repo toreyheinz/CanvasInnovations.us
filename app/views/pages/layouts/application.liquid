@@ -28,7 +28,7 @@ is_layout: true
       <div class="row column">
         <div class="top-bar-left">
           <div class="logo">
-            <img src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '125x87'}}" width="125" height="87" alt="Canvas Innovations Logo">
+            <img src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '125x40#'}}" width="125" height="87" alt="Canvas Innovations Logo">
           </div>
         </div>
 
@@ -45,6 +45,9 @@ is_layout: true
           {% editable_text content %}Lorem ipsum{% endeditable_text %}
         {% endblock %}
       </div>
+      <footer class="text-center">
+        <p class="lead">Canvas Innovations</p>
+      </footer>
     </div>
     <script  src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
     {{ 'vendor/jquery.sticky.js'  | javascript_tag }}

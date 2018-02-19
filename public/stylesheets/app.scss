@@ -66,8 +66,14 @@ header {
   color: $white;
 
   .content {
-    // @include vertical-center;
+    .cta {
+      // position: absolute;
+      // width: 100%;
+      // bottom: rem-calc(10);
+    }
   }
+
+
 
   @include breakpoint(small) {
     height: rem-calc(200);
