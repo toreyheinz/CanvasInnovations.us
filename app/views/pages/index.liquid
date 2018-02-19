@@ -15,7 +15,7 @@ is_layout: false
         </h1>
         <p>West Michigan's Premier Shop for All Your Canvas and Upholstery Needs.</p>
         <p class="cta">
-          <a href="#" class="button"><strong>Get a Free Estimate</strong></a>
+          <a href="#" class="button secondary"><strong>Get a Free Estimate</strong></a>
         </p>
     </div>
   </header>
@@ -59,6 +59,137 @@ is_layout: false
         {% endfor %}
       {% endwith_scope %}
     </div>
+  </section>
+
+  <section class="estimate">
+    <form class="webform-client-form MultiFile-intercepted" enctype="multipart/form-data" action="/request-estimate?service_url=https%3A//www.canvasinnovations.us/marine-services/upholstery&amp;service_interest=Upholstery" method="post" id="webform-client-form-598" accept-charset="UTF-8"><div><div class="form-item webform-component webform-component-markup" id="webform-component-personal-information-title">
+      <div class="row">
+        <h3>Personal Information</h3>
+        <hr>
+        <div class="column medium-4">
+          <label>
+            Name <small>(required)</small>
+            <input type="text" name="submitted[first_name]" value="" size="30" maxlength="128" class="form-text required">
+          </label>
+
+          <label>
+            Email <small> (required)</small>
+            <input class="email form-text form-email required" type="email" id="edit-submitted-email-address" name="submitted[email_address]" size="30">
+          </label>
+          <label>
+            Phone <small> (required)</small>
+            <input type="text" id="edit-submitted-phone-number" name="submitted[phone_number]" value="" size="15" maxlength="128" class="form-text required">
+          </label>
+        </div>
+        <div class="column medium-8">
+          <label>
+            Instructions, Comments, or Questions
+            <div class="form-textarea-wrapper"><textarea style="height: 280px" id="edit-submitted-instructions-comments-or-questions" name="submitted[instructions_comments_or_questions]" class="form-textarea"></textarea></div>
+          </label>
+        </div>
+      </div>
+
+       <hr>
+        <h3>Vessel Information</h3>
+        <hr>
+        <label>
+        Make/Model
+          <input type="text" id="edit-submitted-make-model" name="submitted[make_model]" value="" size="30" maxlength="128" class="form-text">
+      </label>
+      <div class="form-item webform-component webform-component-number" id="webform-component-size">
+        <label>
+          Size <small> (required)</small>
+          <input type="number" id="edit-submitted-size" name="submitted[size]" step="0.5" class="form-text form-number required"> <span class="field-suffix">Ft</span>
+        </label>
+      </div>
+        <label>
+          City <small> (required)</small>
+          <input type="text" id="edit-submitted-vessel-city" name="submitted[vessel_city]" value="" size="30" maxlength="128" class="form-text required">
+        </label>
+      <div class="form-item webform-component webform-component-select" id="webform-component-vessel-state">
+        <label>
+          State <small> (required)</small>
+          <select id="edit-submitted-vessel-state" name="submitted[vessel_state]" class="form-select required"><option value="" selected="selected">- Select -</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="MI">Michigan</option><option value="OH">Ohio</option></select>
+        </label>
+      </div>
+        <label>
+          Zip Code <small> (required)</small>
+          <input type="text" id="edit-submitted-vessel-zip" name="submitted[vessel_zip]" value="" size="5" maxlength="128" class="form-text required">
+        </label>
+        <label>
+        Marina
+          <input type="text" id="edit-submitted-marina" name="submitted[marina]" value="" size="30" maxlength="128" class="form-text">
+      </label>
+      <div class="form-item webform-component webform-component-checkboxes" id="webform-component-services-requested">
+        <label>
+          Services Requested <small> (required)</small>
+          <div id="edit-submitted-services-requested" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-submitted-services-requested-enclosures">
+        </label>
+       <input type="checkbox" id="edit-submitted-services-requested-1" name="submitted[services_requested][enclosures]" value="enclosures" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-1">Enclosure </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-uphosltry">
+       <input type="checkbox" id="edit-submitted-services-requested-2" name="submitted[services_requested][uphosltry]" value="uphosltry" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-2">Upholstry </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-tops">
+       <input type="checkbox" id="edit-submitted-services-requested-3" name="submitted[services_requested][tops]" value="tops" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-3">Boat Tops </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-covers">
+       <input type="checkbox" id="edit-submitted-services-requested-4" name="submitted[services_requested][covers]" value="covers" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-4">Covers </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-windows">
+       <input type="checkbox" id="edit-submitted-services-requested-5" name="submitted[services_requested][windows]" value="windows" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-5">Bonded Windows </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-carpet">
+       <input type="checkbox" id="edit-submitted-services-requested-6" name="submitted[services_requested][carpet]" value="carpet" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-6">Carpet </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-dodger">
+       <input type="checkbox" id="edit-submitted-services-requested-7" name="submitted[services_requested][dodger]" value="dodger" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-7">Dodgers </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-headliners">
+       <input type="checkbox" id="edit-submitted-services-requested-8" name="submitted[services_requested][headliners]" value="headliners" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-8">Headliners </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-repairs">
+       <input type="checkbox" id="edit-submitted-services-requested-9" name="submitted[services_requested][repairs]" value="repairs" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-9">Repairs &amp; Stitching </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-framebending">
+       <input type="checkbox" id="edit-submitted-services-requested-10" name="submitted[services_requested][framebending]" value="framebending" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-10">Custom Frame Bending </label>
+
+      </div>
+      <div class="form-item form-type-checkbox form-item-submitted-services-requested-misc">
+       <input type="checkbox" id="edit-submitted-services-requested-11" name="submitted[services_requested][misc]" value="misc" class="form-checkbox">  <label class="option" for="edit-submitted-services-requested-11">Misc/NA </label>
+
+      </div>
+      </div>
+      </div>
+      <div class="form-item webform-component webform-component-multifile" id="webform-component-vessel-images-multi">
+       <div class="form-item form-type-file form-item-files-vessel-images-multi">
+        <label>
+        Vessel Images
+          <div class="MultiFile-wrap" id="edit-vessel-images-multi_wrap"><input class="form-item multi MultiFile-identifier-vessel-images-multi form-file jquery-once-1-processed MultiFile-applied" type="file" id="edit-vessel-images-multi" name="files[vessel_images_multi][]" size="60" value=""><div class="MultiFile-list" id="edit-vessel-images-multi_wrap_list"></div></div>
+      </label>
+      <div class="description">Please upload any relevant images.</div>
+      </div>
+      <div class="outer"><div class="inner"></div></div><input type="hidden" name="submitted[vessel_images_multi][_fids]" value="">
+      <input type="hidden" name="submitted[vessel_images_multi][_old_fids]">
+
+      </div>
+      <input type="hidden" name="details[sid]">
+      <input type="hidden" name="details[page_num]" value="1">
+      <input type="hidden" name="details[page_count]" value="1">
+      <input type="hidden" name="details[finished]" value="0">
+      <input type="hidden" name="form_build_id" value="form-XlJ0zOK1V4N95GlwBuj7VP0EwSksg8EYPRx8hgFY8Ko">
+      <input type="hidden" name="form_id" value="webform_client_form_598">
+      <div class="form-actions form-wrapper" id="edit-actions"><input class="btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Submit"></div></div>
+    </form>
   </section>
 {% endblock %}
 

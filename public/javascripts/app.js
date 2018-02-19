@@ -3,3 +3,7 @@ $(document).foundation();
 
 $('nav#top-nav > ul').addClass('dropdown menu')
 $('nav#top-nav > ul ul').addClass('menu')
+
+$('header[data-background-url]').each(function() {
+  $(this).css('background-image', 'url("' + $(this).data('background-url') + '")')
+})

@@ -4,10 +4,12 @@ content_type: services
 ---
 {% extends 'layouts/application' %}
 {% block main %}
-  <div class="card">
-    <img src="{{ service.featured_image.url | resize: '1200x400#' }}">
-  </div>
-  <h1>{{ service.title }}</h1>
+  <header class="service" data-background-url="{{ service.featured_image.url | resize: '1200x400#' }}">
+    <div class="content row column text-center">
+      <h1>{{ service.title }}</h1>
+    </div>
+  </header>
+
   {{ service.description }}
   <h2>Projects</h2>
   <ul>

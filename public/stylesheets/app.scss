@@ -69,6 +69,7 @@ header {
     text-transform: uppercase;
   }
 
+
   @include breakpoint(small) {
     height: rem-calc(200);
     h1 {
@@ -80,6 +81,17 @@ header {
     height: rem-calc(400);
     h1 {
       font-size: rem-calc(60);
+    }
+  }
+
+  &.service .content {
+    // background: $primary-color;
+    background: rgba(00, 93, 122, 0.95);
+
+    @include breakpoint(large) {
+      h1 {
+        font-size: rem-calc(40);
+      }
     }
   }
 }
