@@ -19,8 +19,8 @@ is_layout: false
         </p>
     </div>
   </header>
-  <section class="featured-services" >
-    <div class="row" data-equalizer data-equalize-on="medium">
+  <section class="services featured" >
+    <div class="row">
       {% with_scope featured: true %}
         {% for service in contents.services %}
           <div class="columns medium-4">
@@ -29,8 +29,29 @@ is_layout: false
                 <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
 
               </div>
-              <img src="http://via.placeholder.com/650x250">
-              <div class="card-section" data-equalizer-watch>
+              <img src="{{ service.featured_image.url | resize: '600x450#' }}">
+              <div class="card-section">
+                {{ service.brief }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endwith_scope %}
+    </div>
+  </div>
+
+  <section class="services" >
+    <div class="row small-up-2 medium-up-3 large-up-4" >
+      {% with_scope featured: nil %}
+        {% for service in contents.services %}
+          <div class="columns medium-4">
+            <div class="card text-center">
+              <div class="card-divider">
+                <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
+
+              </div>
+              <img src="{{ service.featured_image.url | resize: '400x225#' }}">
+              <div class="card-section">
                 {{ service.brief }}
               </div>
             </div>
@@ -40,3 +61,4 @@ is_layout: false
     </div>
   </section>
 {% endblock %}
+

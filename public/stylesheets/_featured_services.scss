@@ -1,13 +1,30 @@
-.featured-services {
+.services {
   margin-top: rem-calc(10);
 
   .card {
+    position: relative;
     .card-divider {
+      // position: absolute;
+      // top: 0;
+      width: 100%;
+      padding: 0.5rem;
       text-transform: uppercase;
-      background: none;
+      // background: $white;
+      background: $primary-color;
       a {
-        color: $black;
+        // color: $black;
+        color: $white;
       }
     }
+
+    .card-section {
+      padding: 0.5rem;
+      position: absolute;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.85);
+      // background: $black;
+      // color: $white;
+    }
+
   }
 }
