@@ -38,13 +38,11 @@ is_layout: true
       </div>
     </div>
     <!-- End Top Bar -->
-    <div class="wrapper row column">
-      <div class="">
-        {% block main %}
-          <h1>{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}{% endeditable_text %}</h1>
-          {% editable_text content %}Lorem ipsum{% endeditable_text %}
-        {% endblock %}
-      </div>
+    <div class="row column">
+      {% block main %}
+        <h1>{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}{% endeditable_text %}</h1>
+        {% editable_text content %}Lorem ipsum{% endeditable_text %}
+      {% endblock %}
       <footer class="text-center">
         <p class="lead">Canvas Innovations</p>
       </footer>

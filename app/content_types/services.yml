@@ -68,3 +68,8 @@ fields:
     # If you want to manage the entries of the relationship directly from the source entry
     ui_enabled: true
 
+- images:
+    label: Images
+    type: has_many
+    class_name: images
+    inverse_of: service

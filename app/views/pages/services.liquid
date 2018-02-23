@@ -1,0 +1,32 @@
+---
+title: Services
+---
+{% extends 'layouts/application' %}
+{% block 'main' %}
+  {{ 'foundation6/motion.min.css' | stylesheet_tag }}
+  <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-box-of-bullets="orbit-nav">
+    <div class="orbit-wrapper">
+      <div class="orbit-controls">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      </div>
+      <ul class="orbit-container">
+        {% for service in contents.services %}
+          <li class="orbit-slide">
+            <figure class="orbit-figure">
+              <img class="orbit-image" src="https://placehold.it/1200x600/999?text={{ service.title }}" alt="{{ service.title }}">
+              <figcaption class="orbit-caption">{{ service.brief }}</figcaption>
+            </figure>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <nav class="orbit-nav" >
+        {% for service in contents.services %}
+            <img data-slide="{{ forloop.index0 }}" class="thumbnail" src="{{ service.featured_image.url | resize: '400x225#' }}">
+        {% endfor %}
+    </nav>
+  </div>
+
+{% endblock %}
+

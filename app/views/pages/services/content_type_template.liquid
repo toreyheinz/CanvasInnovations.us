@@ -9,13 +9,26 @@ content_type: services
       <h1>{{ service.title }}</h1>
     </div>
   </header>
-
-  {{ service.description }}
-  <h2>Projects</h2>
-  <ul>
-    {% for project in service.projects %}
-      <li><a href="{% path_to project %}">{{ project.title }}</a></li>
+  <p class="lead text-center">{{ service.brief }}<hr style="width:25%"></p>
+  <div class="row column callout">
+    <div class="column medium-5">
+      <div class="card">
+        <img class="" src="{{ service.images.first.file.url }}">
+      </div>
+    </div>
+    <div class="column medium-7">
+      {{ service.description }}
+      <p class="cta text-center">
+        <a href="#" class="button"><strong>Get a Free Estimate</strong></a>
+      </p>
+    </div>
+  </div>
+  <div class="row column callout medium-up-5">
+    {% for image in service.images %}
+      <div class="column column-block">
+        <img class="" src="{{ image.file.url }}">
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 {% endblock %}
 
