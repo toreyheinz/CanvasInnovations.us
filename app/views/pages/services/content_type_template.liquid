@@ -3,6 +3,10 @@ title: Service Template Page
 content_type: services
 ---
 {% extends 'layouts/application' %}
+{% block head %}
+  {{ 'blueimp/blueimp-gallery.css' | stylesheet_tag }}
+{% endblock %}
+
 {% block main %}
   <header class="service" data-background-url="{{ service.featured_image.url | resize: '1200x400#' }}">
     <div class="content row column text-center">
@@ -23,12 +27,37 @@ content_type: services
       </p>
     </div>
   </div>
-  <div class="row column callout medium-up-5">
+  <div id="links" class="row column callout medium-up-5">
     {% for image in service.images %}
       <div class="column column-block">
-        <img class="" src="{{ image.file.url }}">
+        <a href="{{ image.file.url }}">
+          <img class="" src="{{ image.file.url }}">
+        </a>
       </div>
     {% endfor %}
   </div>
+{% endblock %}
+
+{% block body_bottom %}
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+  {{ 'blueimp/blueimp-gallery.js'  | javascript_tag }}
+  <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
 {% endblock %}
 

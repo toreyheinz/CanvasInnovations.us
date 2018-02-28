@@ -1,3 +1,7 @@
+//= require vendor/jquery.sticky
+//= require vendor/what-input
+//= require vendor/foundation
+
 $(document).foundation();
 // $(".top-bar").sticky({zIndex:10});
 

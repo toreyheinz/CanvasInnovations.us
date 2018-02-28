@@ -20,7 +20,8 @@ is_layout: true
       gtag('js', new Date());
       gtag('config', '###');
     </script>
-
+    {% block head %}
+    {% endblock %}
   </head>
   <body class="{{ page.slug }}">
     <!-- Start Top Bar -->
@@ -48,9 +49,8 @@ is_layout: true
       </footer>
     </div>
     <script  src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-    {{ 'vendor/jquery.sticky.js'  | javascript_tag }}
-    {{ 'vendor/what-input.min.js' | javascript_tag }}
-    {{ 'vendor/foundation.min.js' | javascript_tag }}
     {{ 'app.js'                   | javascript_tag }}
+    {% block body_bottom %}
+    {% endblock %}
   </body>
 </html>
