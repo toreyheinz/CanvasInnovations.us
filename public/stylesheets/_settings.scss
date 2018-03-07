@@ -68,8 +68,10 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+$light-blue: #aedbe2;
+$dark-blue: #005D7A;
 $foundation-palette: (
-  primary: #005D7A,
+  primary: $dark-blue,
   secondary: #AC3111,
   success: #3adb76,
   warning: #ffae00,

@@ -49,6 +49,8 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
+@import 'footer';
+@import "services";
 
 body, html {
     height: 100%;
@@ -96,6 +98,8 @@ header {
   }
 }
 
+
+
 .lead {
   font-family: $header-font-family;
 }
@@ -104,4 +108,3 @@ header {
 //   background-color: $light-gray;
 // }
 
-@import "featured_services";

@@ -1,0 +1,16 @@
+footer {
+  .top {
+    color: $white;
+    background: $black;
+  }
+
+  .bottom {
+    color: $white;
+    background: $secondary-color;
+
+    p {
+      margin: 0;
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+---
+title: Page
+slug: page
+position: 99
+listed: false
+published: true
+is_layout: true
+---
+{% extends 'layouts/application' %}
+{% block 'main' %}
+  <header class="service" data-background-url="{{ service.featured_image.url | resize: '1200x400#' }}">
+    <div class="content row column text-center">
+      <h1>{{ service.title }}</h1>
+    </div>
+  </header>
+{% endblock %}
+

@@ -7,4 +7,8 @@ meta_keywords: ''
 meta_description: ''
 robots_txt: ''
 metafields:
+  contact_info:
+    phone_number: "616-393-4400"
+    address: "11276 E. Lakewood Blvd., Holland, MI 49424"
+    email: "sales@canvasinnovations.us"
 metafields_ui: {}

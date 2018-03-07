@@ -22,9 +22,18 @@
       position: absolute;
       bottom: 0;
       background: rgba(255, 255, 255, 0.85);
-      // background: $black;
       // color: $white;
     }
 
+  }
+  &.standard {
+    .card-divider {
+      background: $black;
+      text-transform: none;
+
+      a {
+        // color: $black;
+      }
+    }
   }
 }
