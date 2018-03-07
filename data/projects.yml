@@ -1,16 +1,16 @@
-- "Project 1":
-    featured_image: /samples/000_0030.jpg
-    description: "Ex in est est qui quaerat doloremque et. Sint architecto eveniet qui est ut quis eos. Nihil praesentium iste. Nobis reiciendis dolores. Error cumque culpa optio qui."
+# - "Project 1":
+#     featured_image: /samples/000_0030.jpg
+#     description: "Ex in est est qui quaerat doloremque et. Sint architecto eveniet qui est ut quis eos. Nihil praesentium iste. Nobis reiciendis dolores. Error cumque culpa optio qui."
 
-- "Project 2":
-    featured_image: /samples/000_0034.jpg
-    description: "Voluptates quas ullam. Autem quam ex iste vel. Enim molestias autem expedita."
+# - "Project 2":
+#     featured_image: /samples/000_0034.jpg
+#     description: "Voluptates quas ullam. Autem quam ex iste vel. Enim molestias autem expedita."
 
-- "Project 3":
-    featured_image: /samples/000_0039.jpg
-    description: "Quia maxime ut magni. Maiores illo autem et sequi. Tempore magni consequuntur aut sunt doloribus dolorem perspiciatis."
+# - "Project 3":
+#     featured_image: /samples/000_0039.jpg
+#     description: "Quia maxime ut magni. Maiores illo autem et sequi. Tempore magni consequuntur aut sunt doloribus dolorem perspiciatis."
 
-- "Project 4":
-    featured_image: /samples/000_0045.jpg
-    description: "Tenetur corporis quos dolorem qui reprehenderit. Alias velit facilis molestias ut eius sit. Quaerat ab minus iste. Voluptate sed iste possimus. Adipisci illo eum."
+# - "Project 4":
+#     featured_image: /samples/000_0045.jpg
+#     description: "Tenetur corporis quos dolorem qui reprehenderit. Alias velit facilis molestias ut eius sit. Quaerat ab minus iste. Voluptate sed iste possimus. Adipisci illo eum."
 
