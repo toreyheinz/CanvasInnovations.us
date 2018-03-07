@@ -1,11 +1,16 @@
 footer {
-  .top {
+  color: $white;
+  a {
     color: $white;
+  }
+
+  .top {
+    // color: $white;
     background: $black;
   }
 
   .bottom {
-    color: $white;
+    // color: $white;
     background: $secondary-color;
 
     p {

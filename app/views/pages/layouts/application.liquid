@@ -48,19 +48,71 @@ is_layout: true
       {% endblock %}
     </div>
 
-    <footer class="text-center">
-      <div class="top row expanded">
+    <footer>
+      <div class="top row expanded text-center">
+        <div class="row  text-left">
+          <div class="column medium-3">
+            <p class="lead">
+              Contact us
+            </p>
+            <p>
+              {% include 'phone_number' %}<br>
+
+              {% include 'email_address' %}<br>
+                          </p>
+            <p>
+              {% include 'formatted_address' %}<br>
+
+            </p>
+            <p>
+              Hours of Operation:<br>
+Monday through Friday, <br>
+8:00 AM to 5:00 PM <br>
+Saturdays by Appointment<br>
+            </p>
+          </div>
+          <div class="column medium-3">
+            <p class="lead">
+              Services
+            </p>
+            <ul>
+              {% for service in contents.services limit:8 %}
+                <li><a href="{% path_to service %}">{{ service.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="column medium-3">
+            <p class="lead">
+              Projects
+            </p>
+            <ul>
+              {% for project in contents.projects limit:8 %}
+                <li><a href="{% path_to project %}">{{ project.title }}</a></li>
+              {% endfor %}
+            </ul>
+
+          </div>
+          <div class="column medium-3">
+            <p class="lead">
+              Testimonial
+            </p>
+            <p>
+              I saw the new top and windows for my '99 sedan bridge today for the first time and was AMAZED!<br>
+-- Kevin Hitney, Chicago Il
+            </p>
+          </div>
+        </div>
         <p class="lead">
-          Canvas Innovations<br>
+          Canvas Innovations
         </p>
         <p class="cta">
           <a href="#" class="button"><strong>Get a Free Estimate</strong></a>
         </p>
       </div>
-      <div class="bottom row expanded">
+      <div class="bottom row expanded text-center">
         <p>
           <small>
-            You've reached the bottom of the page, please feel free to call if you have any questions: 616-393-4400
+            You've reached the bottom of the page, please feel free to call if you have any questions: {% include 'phone_number' %}
           </small>
         </p>
       </div>

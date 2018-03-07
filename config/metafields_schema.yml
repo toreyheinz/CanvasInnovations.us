@@ -4,7 +4,9 @@ contact_info:
   fields:
     phone_number:
       type: string
-    address:
+    formatted_address:
       type: string
-    email:
+    simple_address:
+      type: string
+    email_address:
       type: string
