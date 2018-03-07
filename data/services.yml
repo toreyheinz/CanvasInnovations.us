@@ -20,6 +20,7 @@
 - "Sample 4":
     brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
     featured_image: /samples/000_0034.jpg # Path to a file in the public/samples folder or to a remote and external file.
+    featured: false
     description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
 
 - "Sample 4":

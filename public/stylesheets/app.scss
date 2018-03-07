@@ -98,6 +98,14 @@ header {
   }
 }
 
+section.page {
+  padding-top: 1rem;
+
+  h1 {
+    font-size: rem-calc(20);
+    font-weight: bold;
+  }
+}
 
 
 .lead {

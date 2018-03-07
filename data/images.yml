@@ -1,65 +1,61 @@
 - "Image 1":
     category: Before
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0018.jpg
 
 - "Image 2":
     category: Before
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0019.jpg
 
 - "Image 3":
     category: After
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0026.jpg
 
 - "Image 4":
     category: After
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0028.jpg
 
 - "Image 5":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0045.jpg
 
 - "Image 6":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0039.jpg
 - "Image 7":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0018.jpg
 - "Image 8":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0034.jpg
 - "Image 9":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0030.jpg
 - "Image 10":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0028.jpg
 - "Image 11":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0019.jpg
 - "Image 12":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0026.jpg
 - "Image 13":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/100_1304.jpg
 - "Image 14":
+    category: Service
     service: 'boat-enclosures'
-    project: 'project-1'
     file: /samples/000_0045.jpg

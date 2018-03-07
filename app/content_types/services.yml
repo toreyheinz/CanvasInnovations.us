@@ -56,18 +56,6 @@ fields:
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
-- projects: # The lowercase, underscored name of the field
-    label: Projects # Human readable name of the field
-    type: many_to_many
-    required: false
-    hint: What projects included this Service
-    localized: false    # Define the slug of the target content type (eg. comments)
-    class_name: projects
-    # Define the name of the field referring to Offering types in the target content type (eg. post)
-    inverse_of: services
-    # If you want to manage the entries of the relationship directly from the source entry
-    ui_enabled: true
-
 - images:
     label: Images
     type: has_many

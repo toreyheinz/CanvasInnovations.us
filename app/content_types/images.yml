@@ -43,12 +43,6 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- project:
-    label: Project
-    type: belongs_to
-    class_name: projects
-    inverse_of: images
-
 - service:
     label: Service
     type: belongs_to
@@ -65,8 +59,8 @@ fields:
 - category:
     label: Category
     type: select
-    required: true
-    select_options: ['Before', 'After']
+    required: false
+    select_options: ['Before', 'After', 'Service']
 
 
 

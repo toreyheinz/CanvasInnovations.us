@@ -1,12 +1,11 @@
 ---
-title: Page
-slug: page
-position: 99
-listed: false
+title: Testimonials
+slug: testimonials
+listed: true
 published: true
-is_layout: true
+is_layout: false
 ---
-{% extends 'layouts/application' %}
+{% extends 'layouts/page' %}
 {% block 'main' %}
   <header class="service" data-background-url="{% editable_file 'banner', resize: '1200x400#' %}/images/header-bg.jpg{% endeditable_file %}">
     <div class="content row column text-center">
@@ -18,6 +17,14 @@ is_layout: true
       <div class="callout">
         <h1 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Heading{% endeditable_text %}</h1>
         {% editable_text content %}Lorem ipsum{% endeditable_text %}
+        <hr>
+        {% assign testimonials = contents.testimonials.all | shuffle %}
+        {% for testimonial in testimonials %}
+          <p>
+            {{ testimonial.content }}<br>
+            -- <strong>{{ testimonial.who }}</strong>
+          </p>
+        {% endfor %}
       </div>
     </div>
   </section>
