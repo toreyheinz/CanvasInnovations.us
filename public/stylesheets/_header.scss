@@ -1,0 +1,40 @@
+header {
+  position: relative;
+  background: image-url('/images/header-bg.jpg') no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: $white;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+
+  @include breakpoint(small) {
+    height: rem-calc(200);
+    h1 {
+      font-size: rem-calc(30);
+    }
+  }
+
+  @include breakpoint(large) {
+    height: rem-calc(400);
+    h1 {
+      font-size: rem-calc(60);
+    }
+  }
+
+  &.service .content {
+    // background: $primary-color;
+    background: rgba(00, 93, 122, 0.95);
+
+    @include breakpoint(large) {
+      h1 {
+        font-size: rem-calc(40);
+      }
+    }
+  }
+}

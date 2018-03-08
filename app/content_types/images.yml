@@ -52,7 +52,7 @@ fields:
 - file: # The lowercase, underscored name of the field
     label: File # Human readable name of the field
     type: file
-    required: false
+    required: true
     hint: Explanatory text displayed in the back office
     localized: false
 

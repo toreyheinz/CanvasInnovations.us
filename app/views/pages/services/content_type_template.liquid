@@ -8,7 +8,7 @@ content_type: services
 {% endblock %}
 
 {% block main %}
-  <header class="service" data-background-url="{{ service.featured_image.url | resize: '1200x400#' }}">
+  <header class="service" data-background-url="{{ service.featured_image.url | resize: '1200x400#n' }}">
     <div class="content row column text-center">
       <h1>{{ service.title }}</h1>
     </div>
@@ -39,7 +39,7 @@ content_type: services
 {% endblock %}
 
 {% block body_bottom %}
-  <div id="blueimp-gallery" class="blueimp-gallery">
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
     <h3 class="title"></h3>
     <a class="prev">‹</a>

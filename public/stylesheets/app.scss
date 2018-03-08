@@ -51,65 +51,40 @@
 
 @import 'footer';
 @import "services";
+@import "header";
 
 body, html {
     height: 100%;
     background: $white;
 }
 
-header {
-  position: relative;
-  background: image-url('/images/header-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  color: $white;
-
-  h1 {
-    text-transform: uppercase;
-  }
-
-
-  @include breakpoint(small) {
-    height: rem-calc(200);
-    h1 {
-      font-size: rem-calc(30);
-    }
-  }
-
-  @include breakpoint(large) {
-    height: rem-calc(400);
-    h1 {
-      font-size: rem-calc(60);
-    }
-  }
-
-  &.service .content {
-    // background: $primary-color;
-    background: rgba(00, 93, 122, 0.95);
-
-    @include breakpoint(large) {
-      h1 {
-        font-size: rem-calc(40);
-      }
-    }
-  }
-}
-
 section.page {
   padding-top: 1rem;
 
-  h1 {
-    font-size: rem-calc(20);
+  h2 {
+    font-size: rem-calc(24);
     font-weight: bold;
   }
+}
+
+.services .card .card-section {
+  width: 100%;
 }
 
 
 .lead {
   font-family: $header-font-family;
+}
+
+p.thin {
+  margin-bottom: 0;
+  .button {
+    margin-bottom: 0;
+  }
+}
+
+hr.thin {
+  margin: 0.5rem auto;
 }
 
 // .content {

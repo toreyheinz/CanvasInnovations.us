@@ -8,15 +8,11 @@ is_layout: true
 ---
 {% extends 'layouts/application' %}
 {% block 'main' %}
-  <header class="service" data-background-url="{% editable_file 'banner', resize: '1200x400#' %}/images/header-bg.jpg{% endeditable_file %}">
-    <div class="content row column text-center">
-      &nbsp;
-    </div>
-  </header>
+  {% include 'page_header' %}
   <section class="row page {{ page.slug }}">
     <div class="column medium-8 small-centered">
       <div class="callout">
-        <h1 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Heading{% endeditable_text %}</h1>
+        <h2 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Heading{% endeditable_text %}</h2>
         {% editable_text content %}Lorem ipsum{% endeditable_text %}
       </div>
     </div>

@@ -5,56 +5,51 @@
     description: "Nam molestiae ipsa non iure sint architecto doloribus. Odio non quisquam consectetur delectus natus. Magnam iure aliquid fuga sequi harum qui et. Consequuntur autem eligendi explicabo ratione."
 
 - "Boat Enclosures":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
+    brief: "Rain or Shine, Boat Enclosures let you decided what comes in and what stays out."
     featured_image: /samples/000_0045.jpg # Path to a file in the public/samples folder or to a remote and external file.
     featured: true
-    description: "Id vel expedita asperiores. Explicabo doloremque aliquid. Quod non itaque voluptate libero dicta. Aut quis impedit."
-    projects: [project-1, project-2, project-3]
+    description: "Canvas Innovations brings years of experience assuring a unique design and fit that you're looking for. When it comes to fitting your boat top or hardtop with an enclosure you want a tight fit and panels that come together without the classic “bird holes” in the corners! We take time to fit each panel so it looks like it was truly custom fit. With over 24 years experience we can offer designs that will make your new enclosure stand out.
+Standard enclosures are fit to Bimini tops, Camper tops, Hardtops, Aluminum towers.
+We also offer commercial enclosures for three season rooms or any application that needs covering."
 
 - "Boat Flooring":
-    brief: "Enim officia ipsa sunt. Officiis voluptatum doloribus."
-    featured_image: /samples/000_0039.jpg # Path to a file in the public/samples folder or to a remote and external file.
+    brief: "Flooring that's easy to clean and even easier on the feet."
+    featured_image: /samples/100_0036.jpg # Path to a file in the public/samples folder or to a remote and external file.
     featured: true
-    description: "Enim officia ipsa sunt. Officiis voluptatum doloribus. Error architecto asperiores ut voluptas veritatis. Velit doloribus saepe soluta aut."
+    description: "Canvas Innovations offers all exterior and interior carpet installations.
+For exterior applications we offer high quality marine grade carpets. Aqua-loc brand carpets are a pvc backed mat that range from 20 to 40oz pile and work best with exterior snap-in applications.
+We can use your old carpet as a pattern or for that owner who wants a tight custom fit we can pattern it to fit around seating, pedestal mounts or whatever is necessary. Once the carpets are cut we have “in house” binding services to finish all edging. Finally we return the completed mat to the boat and install any needed snaps.
+For interior applications we can do tear-outs and re-installations of most makes and models. Estimates available upon request."
 
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0034.jpg # Path to a file in the public/samples folder or to a remote and external file.
+- "Upholstery":
+    brief: "There's nothing like a seat that feels just right and looks great too!"
+    featured_image: /samples/100_1309.jpg
     featured: false
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+    description: "Canvas Innovations also offers expertise in all areas of upholstery. When it comes to pattern making we have over 30 years combined experience with our staff. We can recover your old boat upholstery or re-design it.
+If you have a new project in mind we can create brand new designs as well. We can build the wood frame and cut the foam to size and then make the patterns for new covers. Give us a call to coordinate your next project."
 
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0030.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+- "Boat Tops":
+    brief: "Stay on the water longer with a custom boat top."
+    featured_image: /samples/100_0967.jpg
+    featured: false
+    description: "Canvas Innovations is a custom shop that offers many styles of boat tops. Each top is designed on an individual basis and custom fit to your boat. Top requirements are individually determined. Heights and lengths are specific to each boats style and the customers needs. We take the time to listen and give the best advise to meet those needs.
+Traditional tops include: Bimini tops, Convertible tops, Camper tops, Skin tops, Sunshades.
+For the Sail boaters we offer Custom Dodgers tops and Bimini’s as well as Filler panels between the Dodger and Bimini tops.
+Skin tops are another style top we offer which gives you the look of a hardtop without the great expense. Since we custom fit all our tops you have the ability to request the overall design."
 
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0028.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
 
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0018.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
+- "Boat Covers":
+    brief: "Keep your boat protect and ready to head back onto the water."
+    featured_image: /samples/P5250363.JPG
+    featured: false
+    description: "Canvas Innovations specializes in giving you that “Custom” fit. When it comes to covering your boat every application is different. Boats have different style windshields and come in many shapes and sizes. If your boat has special rigging or just has that unique design that requires special attention we have the experience to bring it together.
+Keeping your cockpit dry helps preserve your upholstery from the rain and the harmful UV rays the sunshine brings.
+Traditional Cover Styles include: Cockpit covers, Bow covers, Mooring covers, Travel covers."
 
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0019.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
-
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0026.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
-
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/100_1304.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
-
-- "Sample 4":
-    brief: "Id vel expedita asperiores. Explicabo doloremque aliquid."
-    featured_image: /samples/000_0045.jpg # Path to a file in the public/samples folder or to a remote and external file.
-    description: "Suscipit ab sed commodi. Ducimus impedit unde quia alias. Aperiam hic est laudantium cumque accusamus. Qui rerum doloremque aut quas enim laborum."
-
+- "Boat Covers":
+    brief: "Boat Covers"
+    featured_image: /samples/P5250363.JPG
+    featured: false
+    description: "Canvas Innovations specializes in giving you that “Custom” fit. When it comes to covering your boat every application is different. Boats have different style windshields and come in many shapes and sizes. If your boat has special rigging or just has that unique design that requires special attention we have the experience to bring it together.
+Keeping your cockpit dry helps preserve your upholstery from the rain and the harmful UV rays the sunshine brings.
+Traditional Cover Styles include: Cockpit covers, Bow covers, Mooring covers, Travel covers."
