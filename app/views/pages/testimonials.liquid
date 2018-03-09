@@ -24,7 +24,7 @@ editable_elements:
         <hr class="thin">
         {% assign testimonials = contents.testimonials.all | shuffle %}
         {% for testimonial in testimonials %}
-          <p  class="callout tan">
+          <p  class="callout offwhite">
             {{ testimonial.content }}<br>
             -- <strong>{{ testimonial.who }}</strong>
           </p>
