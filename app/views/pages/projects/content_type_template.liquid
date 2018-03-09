@@ -23,9 +23,6 @@ is_layout: true
             {% for image in project.images %}
               <div class="column column-block">
                 <div class="card">
-                  <div class="card-divider">
-                    {{ image.title }}
-                  </div>
                   <img src="{{ image.file.url }}">
                 </div>
               </div>

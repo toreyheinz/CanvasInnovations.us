@@ -49,6 +49,12 @@ fields:
     class_name: services
     inverse_of: images
 
+- projects:
+    label: Project
+    type: many_to_many
+    class_name: projects
+    inverse_of: images
+
 - file: # The lowercase, underscored name of the field
     label: File # Human readable name of the field
     type: file

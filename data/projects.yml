@@ -1,0 +1,6 @@
+- "Laydown Seating Repair":
+    brief: "Replaced Burned panels on laydown seating"
+    featured_image: /samples/100_0921.jpg # Path to a file in the public/samples folder or to a remote and external file.
+    featured: true
+    description: "These laydown seats had sunburn on the top panels. The side bolsters also had some burns. We removed the seats and side panel and replace sthe sections that were burned."
+    images: ["100_0921", "100_0920", "100_0639", "100_0638", "100_0637"]

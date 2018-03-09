@@ -1,7 +1,7 @@
 # Human readable name of this type
-name: Services
-slug: services
-description: Used to identify Featured and regular Services that Canvas Innovations offers
+name: Projects
+slug: projects
+description: Complteted Projects with before and After pictures
 label_field_name: title
 
 order_by: manually
@@ -60,4 +60,4 @@ fields:
     label: Images
     type: many_to_many
     class_name: images
-    inverse_of: services
+    inverse_of: projects
