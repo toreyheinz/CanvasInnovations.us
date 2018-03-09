@@ -43,9 +43,9 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- service:
-    label: Service
-    type: belongs_to
+- services:
+    label: Services
+    type: many_to_many
     class_name: services
     inverse_of: images
 

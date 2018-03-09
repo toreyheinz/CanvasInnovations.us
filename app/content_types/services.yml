@@ -58,6 +58,6 @@ fields:
 
 - images:
     label: Images
-    type: has_many
+    type: many_to_many
     class_name: images
-    inverse_of: service
+    inverse_of: services

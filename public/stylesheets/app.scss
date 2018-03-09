@@ -87,6 +87,10 @@ hr.thin {
   margin: 0.5rem auto;
 }
 
+img:not([src]) {
+    visibility: hidden;
+}
+
 // .content {
 //   background-color: $light-gray;
 // }
