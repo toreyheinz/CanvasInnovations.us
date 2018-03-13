@@ -1,0 +1,52 @@
+---
+title: Contact Us
+handle: contact-us
+slug: contact
+listed: true
+published: true
+is_layout: false
+editable_elements:
+  "main/heading": "Contact a Real Person, Who Really Cares."
+  "main/content": "Wheither you are ready to get start or still have some questions, feel free to reach out, and we'll assist you anyway we can."
+---
+{% extends 'layouts/page' %}
+{% block 'main' %}
+  {% include 'page_header' %}
+<section class="row page {{ page.slug }}">
+    <div class="column medium-8 small-centered">
+      <div class="callout">
+        <h2 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Heading{% endeditable_text %}</h2>
+        {% editable_text content %}Lorem ipsum{% endeditable_text %}
+        <hr>
+        <div class="row">
+            <div class="column medium-6">
+                            <p>
+              <strong>Phone:</strong> {% include 'phone_number' %}<br>
+
+              <strong>Email:</strong> {% include 'email_address' %}<br>
+                          </p>
+            <p>
+              <strong>Addresss:</strong><br>
+              {% include 'formatted_address' %}<br>
+
+            </p>
+            <p>
+              {% include 'hours' %}
+            </p>
+            <div class="responsive-embed">
+              <iframe width="600" height="450" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ9ydA7dCSGYgR9gOaaCWfa1k&key=AIzaSyA0ffMEjozfU9dLu6LV1okQqylnrGHCSok" allowfullscreen>
+              </iframe>
+            </div>
+
+            </div>
+            <div class="column medium-6">
+            </div>
+            <hr>
+          </div>
+          {% include 'random_testimonial' %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

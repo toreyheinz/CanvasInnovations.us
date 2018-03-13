@@ -1,0 +1,7 @@
+{% assign testimonial_number = contents.testimonials.size | random %}
+<p>
+  {% for testimonial in contents.testimonials offset:testimonial_number limit:1 %}
+    {{ testimonial.content | truncate: 250 }}<br>
+    -- {{ testimonial.who }}
+  {% endfor %}
+</p>
