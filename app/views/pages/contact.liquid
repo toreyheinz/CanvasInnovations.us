@@ -13,7 +13,7 @@ editable_elements:
 {% block 'main' %}
   {% include 'page_header' %}
 <section class="row page {{ page.slug }}">
-    <div class="column medium-8 small-centered">
+    <div class="column medium-10 large-8 small-centered">
       <div class="callout">
         <h2 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Heading{% endeditable_text %}</h2>
         {% editable_text content %}Lorem ipsum{% endeditable_text %}
@@ -33,20 +33,75 @@ editable_elements:
             <p>
               {% include 'hours' %}
             </p>
-            <div class="responsive-embed">
-              <iframe width="600" height="450" frameborder="0" style="border:0"
+
+            <p class="thin"><strong>Come visit our Showroom</strong></p>
+            <div class="responsive-embed square">
+              <iframe width="600" height="600" frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ9ydA7dCSGYgR9gOaaCWfa1k&key=AIzaSyA0ffMEjozfU9dLu6LV1okQqylnrGHCSok" allowfullscreen>
               </iframe>
             </div>
 
             </div>
             <div class="column medium-6">
+              {% model_form 'customer_messages', success: '/contact-thank-you', error: '/contact', id: 'contact-form' %}
+                {% if customer_message.errors %}
+                  <p>The following errors occured:</p>
+                  <ul>
+                  {% for error in customer_message.errors %}
+                    <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+                  <label>
+                    Full Name:
+                    <input name="content[name]" required="true" type="text"  value="{{customer_message.name}}">
+                  </label>
+                  <label>
+                    Best Email:
+                    <input name="content[email]" required="true" type="email"  value="{{customer_message.email}}">
+                  </label>
+                  <label>
+                    Your Phone:
+                    <input name="content[phone]" required="true" type="tel" value="{{customer_message.phone}}">
+                  </label>
+                  <label>
+                    Full Address:
+                    <textarea name="content[address]" rows="2" required="true" >{{customer_message.address}}</textarea>
+                  </label>
+                  <label>
+                    Message:
+                    <textarea name="content[message]" rows="4" required="true" >{{customer_message.message}}</textarea>
+                  </label>
+                  </tr>
+                </table>
+                <div class="robot-warning hide callout text-center warning">
+                  Are you robot?
+                </div>
+                <div class="callout g-recaptcha text-center" data-sitekey="6LdbaUwUAAAAAFPucKMnLxCnYvIPBr3UQNOLYCE2"></div>
+                <input type="submit" class="button expanded">
+              {% endmodel_form %}
             </div>
             <hr>
           </div>
-          {% include 'random_testimonial' %}
+            <strong>Testimonial: </strong>
+            {% include 'random_testimonial' %}
         </div>
       </div>
     </div>
   </section>
+{% endblock %}
+{% block body_bottom %}
+  <script type="text/javascript">
+    $(function() {
+      $('#contact-form').on('submit', function(e) {
+        var form = $(this);
+        $('.robot-warning').addClass('hide')
+
+        if (grecaptcha.getResponse() == "") {
+          e.preventDefault();
+          $('.robot-warning').removeClass('hide')
+        }
+      });
+    });
+  </script>
 {% endblock %}
