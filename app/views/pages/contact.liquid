@@ -1,13 +1,13 @@
 ---
-title: Contact Us
-handle: contact-us
+title: Contact
+handle: contact
 slug: contact
 listed: true
 published: true
 is_layout: false
 editable_elements:
   "main/heading": "Contact a Real Person, Who Really Cares."
-  "main/content": "Wheither you are ready to get start or still have some questions, feel free to reach out, and we'll assist you anyway we can."
+  "main/content": "Whether you are ready to get start or still have some questions, feel free to reach out, and we'll assist you anyway we can."
 ---
 {% extends 'layouts/page' %}
 {% block 'main' %}
@@ -43,7 +43,7 @@ editable_elements:
 
             </div>
             <div class="column medium-6">
-              {% model_form 'customer_messages', success: '/contact-thank-you', error: '/contact', id: 'contact-form' %}
+              {% model_form 'customer_messages', success: '/thank-you', error: '/contact', id: 'contact-form' %}
                 {% if customer_message.errors %}
                   <p>The following errors occured:</p>
                   <ul>

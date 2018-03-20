@@ -1,12 +1,12 @@
 ---
-title: Testimonials
-slug: testimonials
-listed: true
+title: Thank You!
+slug: thank-you
+listed: false
 published: true
 is_layout: false
 editable_elements:
-  "main/heading": "Join our List of Happy Customers!"
-  "main/content": "Our customers are the best, and we are honored to be able to serve them. "
+  "main/heading": "We'll be contacting you soon!"
+  "main/content": "We know you are excited to get started, while you wait, see what others have said."
 ---
 {% extends 'layouts/page' %}
 {% block 'main' %}
@@ -17,9 +17,6 @@ editable_elements:
         <h2 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Heading{% endeditable_text %}</h2>
         <div class="text-center">
           {% editable_text content %}Lorem ipsum{% endeditable_text %}
-          <p class='thin'>
-            <a href="#" class="button"><strong>Add Your Feedback</strong></a>
-          </p>
         </div>
         <hr class="thin">
         {% include 'testimonials' %}

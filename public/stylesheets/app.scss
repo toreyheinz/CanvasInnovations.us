@@ -49,9 +49,11 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
-@import 'footer';
+@import "vendor/trumbowyg";
+@import "footer";
 @import "services";
 @import "header";
+
 
 body, html {
     height: 100%;

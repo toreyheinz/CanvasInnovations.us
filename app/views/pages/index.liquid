@@ -45,7 +45,7 @@ is_layout: false
                         <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
                     </div>
                     <img src="{{ service.featured_image.url | resize: '400x300#' }}">
-                    <div class="card-section">
+                    <div class="card-section hide-for-small-only">
                         {{ service.brief }}
                     </div>
                 </div>

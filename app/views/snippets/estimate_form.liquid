@@ -1,0 +1,47 @@
+{% model_form 'marine_estimate_requests', success: '/contact/thank-you', error: '/estimate', id: 'estimate-form' %}
+  {% if marine_estimate_request.errors %}
+    <p>The following errors occured:</p>
+    <ul>
+    {% for error in marine_estimate_request.errors %}
+      <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+    <label>
+      Full Name:{% include 'required' %}
+      <input name="content[name]" required="true" type="text"  value="{{marine_estimate_request.name}}">
+    </label>
+    <label>
+      Best Email:{% include 'required' %}
+      <input name="content[email]" required="true" type="email"  value="{{marine_estimate_request.email}}">
+    </label>
+    <label>
+      Your Phone:{% include 'required' %}
+      <input name="content[phone]" required="true" type="tel" value="{{marine_estimate_request.phone}}">
+    </label>
+    <label>
+      Project Address:{% include 'required' %}
+      <p class="help-text thin">Please enter complete address</p>
+      <textarea name="content[address]" rows="2" required="true" placeholder="11276 E. Lakewood Blvd.
+Holland, MI 49424 ">{{marine_estimate_request.address}}</textarea>
+    </label>
+    <label>
+      Project Location:
+      <p class="help-text thin">When applicable include: Marina, Dock/Slip number, location on property, etc.</p>
+      <textarea name="content[vessel_description]" rows="2">{{marine_estimate_request.vessel_description}}</textarea>
+    </label>
+    <label>
+      Work to be Completed:{% include 'required' %}
+      <textarea class="autosize" name="content[message]" rows="6" required="true" >{{marine_estimate_request.message}}</textarea>
+    </label>
+    <label>
+      When would you like your project completed by?
+      <input name="content[completion_date]" type="date" >
+    </label>
+    </tr>
+  <div class="robot-warning hide callout text-center warning">
+    Are you robot?
+  </div>
+  <div class="callout g-recaptcha text-center" data-sitekey="6LdbaUwUAAAAAFPucKMnLxCnYvIPBr3UQNOLYCE2"></div>
+  <input type="submit" class="button expanded large" value="Let's Get Started!">
+{% endmodel_form %}
