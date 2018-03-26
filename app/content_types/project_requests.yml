@@ -1,8 +1,8 @@
 # Human readable name of this type
-name: Marine estimate requests
+name: Project Requests
 
 # Lowercase, underscored handle used to access this type
-slug: marine_estimate_requests
+slug: project_requests
 
 # Explanatory text displayed in the back-office
 description: A description of the content type for the editors
@@ -58,15 +58,8 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- vessel_description: # The lowercase, underscored name of the field
-    label: Vessel description # Human readable name of the field
-    type: string
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
-
-- hull_number: # The lowercase, underscored name of the field
-    label: Hull number # Human readable name of the field
+- address: # The lowercase, underscored name of the field
+    label: Address # Human readable name of the field
     type: string
     required: false
     hint: Explanatory text displayed in the back office
@@ -79,13 +72,6 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- marina: # The lowercase, underscored name of the field
-    label: Marina # Human readable name of the field
-    type: string
-    required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
-
 - completion_date: # The lowercase, underscored name of the field
     label: Completion date # Human readable name of the field
     type: string
@@ -93,8 +79,8 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
 
-- message: # The lowercase, underscored name of the field
-    label: Message # Human readable name of the field
+- project_description: # The lowercase, underscored name of the field
+    label: Project Description # Human readable name of the field
     type: text
     required: false
     hint: Explanatory text displayed in the back office

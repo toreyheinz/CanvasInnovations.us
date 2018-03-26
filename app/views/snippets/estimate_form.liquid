@@ -1,38 +1,38 @@
-{% model_form 'marine_estimate_requests', success: '/contact/thank-you', error: '/estimate', id: 'estimate-form' %}
-  {% if marine_estimate_request.errors %}
+{% model_form 'project_requests', success: '/contact/thank-you', error: '/estimate', id: 'estimate-form' %}
+  {% if project_request.errors %}
     <p>The following errors occured:</p>
     <ul>
-    {% for error in marine_estimate_request.errors %}
+    {% for error in project_request.errors %}
       <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
     {% endfor %}
     </ul>
   {% endif %}
     <label>
       Full Name:{% include 'required' %}
-      <input name="content[name]" required="true" type="text"  value="{{marine_estimate_request.name}}">
+      <input name="content[name]" required="true" type="text"  value="{{project_request.name}}">
     </label>
     <label>
       Best Email:{% include 'required' %}
-      <input name="content[email]" required="true" type="email"  value="{{marine_estimate_request.email}}">
+      <input name="content[email]" required="true" type="email"  value="{{project_request.email}}">
     </label>
     <label>
       Your Phone:{% include 'required' %}
-      <input name="content[phone]" required="true" type="tel" value="{{marine_estimate_request.phone}}">
+      <input name="content[phone]" required="true" type="tel" value="{{project_request.phone}}">
     </label>
     <label>
       Project Address:{% include 'required' %}
       <p class="help-text thin">Please enter complete address</p>
       <textarea name="content[address]" rows="2" required="true" placeholder="11276 E. Lakewood Blvd.
-Holland, MI 49424 ">{{marine_estimate_request.address}}</textarea>
+Holland, MI 49424 ">{{project_request.address}}</textarea>
     </label>
     <label>
       Project Location:
       <p class="help-text thin">When applicable include: Marina, Dock/Slip number, location on property, etc.</p>
-      <textarea name="content[vessel_description]" rows="2">{{marine_estimate_request.vessel_description}}</textarea>
+      <textarea name="content[location]" rows="2">{{project_request.location}}</textarea>
     </label>
     <label>
       Work to be Completed:{% include 'required' %}
-      <textarea class="autosize" name="content[message]" rows="6" required="true" >{{marine_estimate_request.message}}</textarea>
+      <textarea class="autosize" name="content[project_description]" rows="6" required="true" >{{project_request.project_description}}</textarea>
     </label>
     <label>
       When would you like your project completed by?

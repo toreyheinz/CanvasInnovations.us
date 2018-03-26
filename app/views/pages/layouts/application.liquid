@@ -25,10 +25,16 @@ is_layout: true
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body class="{{ page.slug }}">
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <a href="/" class="logo">
+        Canvas Innovations
+      </a>
+      <button class="menu-icon float-right" type="button" data-toggle="example-menu"></button>
+    </div>
     <!-- Start Top Bar -->
-    <div class="top-bar">
+    <div class="top-bar"  id="example-menu">
       <div class="row column">
-        <div class="top-bar-left">
+        <div class="top-bar-left  text-center medium-text-left">
           <div class="logo">
             <a href="/">
               <img src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '125x40#'}}" width="125" height="87" alt="Canvas Innovations Logo">
@@ -36,7 +42,7 @@ is_layout: true
           </div>
         </div>
 
-        <div class="top-bar-right">
+        <div class="top-bar-right  text-center medium-text-left">
           {% include 'dropdown-menu' %}
         </div>
       </div>

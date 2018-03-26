@@ -1,0 +1,17 @@
+<section class="services standard">
+    <div class="row small-up-2 medium-up-3 large-up-4">
+        {% with_scope featured: false %} {% for service in contents.services %}
+        <div class="columns medium-4">
+            <div class="card text-center">
+                <div class="card-divider">
+                    <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
+                </div>
+                <img src="{{ service.featured_image.url | resize: '400x300#' }}">
+                <div class="card-section hide-for-small-only">
+                    {{ service.brief }}
+                </div>
+            </div>
+        </div>
+        {% endfor %} {% endwith_scope %}
+    </div>
+</section>

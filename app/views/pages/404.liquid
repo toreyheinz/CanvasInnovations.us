@@ -8,8 +8,13 @@ is_layout: false
 ---
 {% extends 'layouts/application' %}
 {% block 'main' %}
-	<div class="text-center">
-		<h1>Page Not Found</h1>
-		<p>We're sorry but we can't find the page you are looking for</p>
-	</div>
+  {% include 'page_header' %}
+  <section class="row page {{ page.slug }}">
+    <div class="column medium-8 small-centered">
+      <div class="callout">
+        <h2 class="text-center">{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}This page is lost at sea!{% endeditable_text %}</h2>
+      </div>
+    </div>
+  </section>
+  {% include 'featured-services' %}
 {% endblock %}
