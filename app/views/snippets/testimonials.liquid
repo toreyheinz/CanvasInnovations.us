@@ -1,6 +1,6 @@
 {% assign testimonial_list = contents.testimonials.all | shuffle %}
-{% for testimonial in testimonial_list limit:10 %}
-  <p  class="callout offwhite">
+{% for testimonial in testimonial_list %}
+  <p class="callout offwhite">
     {{ testimonial.content }}<br>
     -- <strong>{{ testimonial.who }}</strong>
   </p>
