@@ -23,7 +23,7 @@ title: Services
     </div>
     <nav class="orbit-nav" >
         {% for service in contents.services %}
-            <img data-slide="{{ forloop.index0 }}" class="thumbnail" src="{{ service.featured_image.url | resize: '400x225#' }}">
+            <img data-slide="{{ forloop.index0 }}" class="thumbnail" src="{{ service.featured_image.url | resize: '400x225#', optimize: 80 }}">
         {% endfor %}
     </nav>
   </div>

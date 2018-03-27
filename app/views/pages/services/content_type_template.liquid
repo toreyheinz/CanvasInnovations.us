@@ -8,7 +8,7 @@ content_type: services
 {% endblock %}
 
 {% block main %}
-  <header class="service" data-background-url="{{ service.featured_image.url | resize: '1200x400#n' }}">
+  <header class="service" style="background-image: url({{ service.featured_image.url | resize: '1200x400#', optimize: 80 }})">
     <div class="content row column text-center">
       <h1>{{ service.title }}</h1>
     </div>
@@ -31,7 +31,7 @@ content_type: services
     {% for image in service.images %}
       <div class="column column-block">
         <a href="{{ image.file.url | resize: '1200x', optimize: 80 }}">
-          <img class="thumbnail" height="400" width="300" src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '400x300'}}" data-src="{{ image.file.url | resize: '400x300#', optimize: 50, progressive: true }}">
+          <img class="thumbnail" height="400" width="300" src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '400x300', optimize: 50 }}" data-src="{{ image.file.url | resize: '400x300#', optimize: 50 }}">
         </a>
       </div>
     {% endfor %}

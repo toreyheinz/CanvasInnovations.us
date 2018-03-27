@@ -6,7 +6,7 @@
                 <div class="card-divider">
                     <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
                 </div>
-                <img src="{{ service.featured_image.url | resize: '400x300#' }}">
+                <img src="{{ service.featured_image.url | resize: '400x300#', optimize: 80 }}">
                 <div class="card-section hide-for-small-only">
                     {{ service.brief }}
                 </div>
