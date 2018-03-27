@@ -5,6 +5,8 @@ position: 0
 listed: true
 published: true
 is_layout: false
+editable_elements:
+  "main/heading": "West Michigan's Premier Shop for All Your Canvas and Upholstery Needs."
 ---
 {% extends 'layouts/application' %}
 {% block 'main' %}
@@ -13,7 +15,7 @@ is_layout: false
         <h1>
           Canvas Innovations
         </h1>
-        <p>West Michigan's Premier Shop for All Your Canvas and Upholstery Needs.</p>
+        <p>{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}Header{% endeditable_text %}</p>
         <p class="cta">
             {% include 'estimate_button' %}
         </p>

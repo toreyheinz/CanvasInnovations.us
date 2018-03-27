@@ -4,10 +4,24 @@
   {% capture page_title %}{{ page.title | escape }} | {{ site.name }}{% endcapture %}
 {% endif %}
 
-{% if page.featured_image %}
-  {% capture image_url %}{{ page.featured_image | theme_image_url | resize: '1200x1200' }}{% endcapture %}
+{% if page.editable_elements.main.banner != blank %}
+  {% assign image_url = page.editable_elements.main.banner %}
+{% elsif project.featured_image %}
+  {% assign image_url = project.featured_image.url %}
+{% elsif service.featured_image %}
+  {% assign image_url = service.featured_image.url %}
 {% else %}
-  {% capture image_url %}{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '1200x1200'}}{% endcapture %}
+  {% assign image_url = 'CanvasInnovations-logo.jpg' | theme_image_url %}
+{% endif %}
+
+{% if page.editable_elements.main.heading != blank %}
+  {% assign description = page.editable_elements.main.heading %}
+{% elsif project.brief %}
+  {% assign description = project.brief %}
+{% elsif service.brief %}
+  {% assign description = service.brief %}
+{% else %}
+  {% assign description = 'Foo' %}
 {% endif %}
 
 <meta charset="utf-8">
@@ -16,7 +30,11 @@
 
 <title>{{ page_title }}</title>
 {% seo %}
-<meta property="og:title" content="{{ page.title | escape }} | Canvas Innovations" />
-<meta property="og:image" content="{{ image_url }}" />
 <meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:title" content="{{ page.title | escape }} | Canvas Innovations" />
+<meta property="og:image" content="{{ base_url }}{{ image_url | resize: '1200x1200', optimize: 80 }}" />
+<meta property="og:description" content="{{ description }}" />
 <link rel="shortcut icon" href="{{ 'favicon.ico' | theme_image_url }}">
+<meta name="page" content="{{ page.featured_image.url }}">
+<meta name="test" content="{{ service.featured_image.url }}">
+
