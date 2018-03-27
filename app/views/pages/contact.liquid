@@ -43,7 +43,7 @@ editable_elements:
 
             </div>
             <div class="column medium-6">
-              {% model_form 'customer_messages', success: '/thank-you', error: '/contact', id: 'contact-form' %}
+              {% model_form 'customer_messages', success: '/confirmations/contact', error: '/contact', id: 'contact-form' %}
                 {% if customer_message.errors %}
                   <p>The following errors occured:</p>
                   <ul>

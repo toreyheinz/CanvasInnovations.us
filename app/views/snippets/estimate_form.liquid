@@ -1,4 +1,4 @@
-{% model_form 'project_requests', success: '/contact/thank-you', error: '/estimate', id: 'estimate-form' %}
+{% model_form 'project_requests', success: '/confirmations/estimate-request', error: '/estimate', id: 'estimate-form' %}
   {% if project_request.errors %}
     <p>The following errors occured:</p>
     <ul>
@@ -8,37 +8,90 @@
     </ul>
   {% endif %}
     <label>
-      Full Name:{% include 'required' %}
-      <input name="content[name]" required="true" type="text"  value="{{project_request.name}}">
+      <strong>Full Name:</strong>{% include 'required' %}
+      <input name="content[name]" required type="text"  value="{{project_request.name}}">
     </label>
     <label>
-      Best Email:{% include 'required' %}
-      <input name="content[email]" required="true" type="email"  value="{{project_request.email}}">
+      <strong>Best Email:</strong>{% include 'required' %}
+      <input name="content[email]" required type="email"  value="{{project_request.email}}">
     </label>
     <label>
-      Your Phone:{% include 'required' %}
-      <input name="content[phone]" required="true" type="tel" value="{{project_request.phone}}">
+      <strong>Your Phone:</strong>{% include 'required' %}
+      <input name="content[phone]" required type="tel" value="{{project_request.phone}}">
     </label>
     <label>
-      Project Address:{% include 'required' %}
-      <p class="help-text thin">Please enter complete address</p>
-      <textarea name="content[address]" rows="2" required="true" placeholder="11276 E. Lakewood Blvd.
-Holland, MI 49424 ">{{project_request.address}}</textarea>
+      <strong>Project Address:</strong>{% include 'required' %}
+      <input class="thin" name="content[address]" required type="text" value="{{project_request.address}}">
+      <fieldset class="row collapse">
+        <div class="column small-6">
+          <label>
+            City:
+            <input name="content[city]" required type="text" value="{{project_request.address}}">
+          </label>
+        </div>
+        <div class="column small-2">
+          <label>
+            State:
+            <input name="content[state]" required type="text" value="{{project_request.address}}">
+          </label>
+        </div>
+        <div class="column small-4">
+          <label>
+            Zip:
+            <input name="content[zip]" required type="text" value="{{project_request.address}}">
+          </label>
+        </div>
+      </fieldset>
     </label>
     <label>
-      Project Location:
+      <strong>Project Location:</strong>
       <p class="help-text thin">When applicable include: Marina, Dock/Slip number, location on property, etc.</p>
       <textarea name="content[location]" rows="2">{{project_request.location}}</textarea>
     </label>
     <label>
-      Work to be Completed:{% include 'required' %}
-      <textarea class="autosize" name="content[project_description]" rows="6" required="true" >{{project_request.project_description}}</textarea>
+      <strong>Services Required:</strong>{% include 'required' %}
+      <fieldset class="service-checkboxes row medium-up-2">
+        {% for service in contents.services %}
+          <div class="column">
+            <input id="{{ service._id }}" type="checkbox"><label for="checkbox1">{{ service.title }}</label>
+          </div>
+        {% endfor %}
+      </fieldset>
+    </label>
+    <label>
+     <strong> Work to be Completed:</strong>{% include 'required' %}
+      <textarea class="autosize" name="content[project_description]" rows="6" required >{{project_request.project_description}}</textarea>
     </label>
     <label>
       When would you like your project completed by?
       <input name="content[completion_date]" type="date" >
     </label>
-    </tr>
+    <fieldset class="row medium-up-2">
+      <div class="column">
+        <label for="exampleFileUpload">
+          <strong>First Attachment:</strong>
+          <input type="file" id="exampleFileUpload">
+        </label>
+      </div>
+      <div class="column">
+        <label for="exampleFileUpload">
+          <strong>Second Attachment:</strong>
+          <input type="file" id="exampleFileUpload">
+        </label>
+      </div>
+      <div class="column">
+        <label for="exampleFileUpload">
+          <strong>Third Attachment:</strong>
+          <input type="file" id="exampleFileUpload">
+        </label>
+      </div>
+      <div class="column">
+        <label for="exampleFileUpload">
+          <strong>Forth Attachment:</strong>
+          <input type="file" id="exampleFileUpload">
+        </label>
+      </div>
+    </fieldset>
   <div class="robot-warning hide callout text-center warning">
     Are you robot?
   </div>
