@@ -41,9 +41,9 @@ fields:
 
 - brief: # The lowercase, underscored name of the field
     label: Brief # Human readable name of the field
-    type: text
+    type: string
     required: false
-    hint: A brief intro to this Offering Type
+    hint: A brief intro to this Service
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
