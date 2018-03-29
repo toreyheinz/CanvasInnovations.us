@@ -31,7 +31,7 @@ content_type: services
     {% for image in service.images %}
       <div class="column column-block">
         <a href="{{ image.file.url | resize: '1200x', optimize: 80 }}">
-          <img class="thumbnail" height="400" width="300" src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '400x300', optimize: 50 }}" data-src="{{ image.file.url | resize: '400x300#', optimize: 50 }}">
+          <img class="thumbnail" height="400" width="300" src="{{ 'CanvasInnovations-logo.jpg' | theme_image_url | resize: '400x300#', optimize: 50 }}" data-src="{{ image.file.url | resize: '400x300#', optimize: 50 }}">
         </a>
       </div>
     {% endfor %}

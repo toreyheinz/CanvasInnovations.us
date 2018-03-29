@@ -1,5 +1,14 @@
-<ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu data-alignment="left">
+<ul id="top-nav" class="menu vertical medium-horizontal" data-responsive-menu="accordion medium-dropdown" data-alignment="left" data-click-open=false>
   <li><a href="/">Home</a></li>
+    <li>
+      {% link_to 'services' %}
+        <ul class="menu">
+          {% for service in contents.services %}
+            <li>{% link_to service %}</li>
+          {% endfor %}
+        </ul>
+    </li>
+
   {% for page in site.pages %}
     {% if page.depth == 1 and page.listed? %}
       <li>

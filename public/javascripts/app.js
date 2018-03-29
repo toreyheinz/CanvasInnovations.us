@@ -6,8 +6,8 @@
 $(document).foundation();
 // $(".top-bar").sticky({zIndex:10});
 
-$('nav#top-nav > ul').addClass('dropdown menu')
-$('nav#top-nav > ul ul').addClass('menu')
+// $('nav#top-nav > ul').addClass('dropdown menu')
+// $('nav#top-nav > ul ul').addClass('menu')
 
 $('header[data-background-url]').each(function() {
   $(this).css('background-image', 'url("' + $(this).data('background-url') + '")')
