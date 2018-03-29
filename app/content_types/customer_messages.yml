@@ -1,20 +1,20 @@
 # Human readable name of this type
-name: Customer messages
+name: Customer Messages
 
 # Lowercase, underscored handle used to access this type
 slug: customer_messages
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: This is where the submissions form the Contact Form live.
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: name
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
-order_by: manually
+order_by: created_at
 
 # Valid values: asc (ascending) and desc (descending). Set to asc by default.
-# order_direction: asc
+order_direction: desc
 
 # Specify a field slug to group entries by that field in the back-office.
 # group_by: <your field>
@@ -41,34 +41,29 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - email: # The lowercase, underscored name of the field
     label: Email # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - phone: # The lowercase, underscored name of the field
     label: Phone # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - address: # The lowercase, underscored name of the field
     label: Address # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - message: # The lowercase, underscored name of the field
     label: Message # Human readable name of the field
     type: text
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)

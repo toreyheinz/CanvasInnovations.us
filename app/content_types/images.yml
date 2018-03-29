@@ -5,13 +5,13 @@ name: Images
 slug: images
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: Images can be realated to Services or Projects
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: title
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
-order_by: manually
+order_by: title
 
 # Valid values: asc (ascending) and desc (descending). Set to asc by default.
 # order_direction: asc
@@ -40,7 +40,13 @@ fields:
 - title: # The lowercase, underscored name of the field
     label: Title # Human readable name of the field
     type: string
-    hint: Explanatory text displayed in the back office
+    hint: Describe why someone should care about this Image
+    localized: false
+
+- file: # The lowercase, underscored name of the field
+    label: File # Human readable name of the field
+    type: file
+    required: true
     localized: false
 
 - services:
@@ -55,17 +61,11 @@ fields:
     class_name: projects
     inverse_of: images
 
-- file: # The lowercase, underscored name of the field
-    label: File # Human readable name of the field
-    type: file
-    required: true
-    hint: Explanatory text displayed in the back office
-    localized: false
-
 - category:
     label: Category
     type: select
     required: false
+    hint: Mostly used to identify Before and After pictures for Projects
     select_options: ['Before', 'After', 'Service']
 
 

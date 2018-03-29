@@ -51,3 +51,16 @@ fields:
     hint: Explanatory text displayed in the back office
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
+
+- services:
+    label: Services
+    type: many_to_many
+    class_name: services
+    inverse_of: testimonials
+
+- projects:
+    label: Project
+    type: many_to_many
+    class_name: projects
+    inverse_of: testimonials
+

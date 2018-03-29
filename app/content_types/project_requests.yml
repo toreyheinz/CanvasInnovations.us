@@ -5,16 +5,16 @@ name: Project Requests
 slug: project_requests
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: This is where the submissions form the Estimate form live.
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: name
 
 # Valid values: manually, created_at, updated_at, or the slug of any field
-order_by: manually
+order_by: created_at
 
 # Valid values: asc (ascending) and desc (descending). Set to asc by default.
-# order_direction: asc
+order_direction: desc
 
 # Specify a field slug to group entries by that field in the back-office.
 # group_by: <your field>

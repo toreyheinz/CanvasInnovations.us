@@ -1,7 +1,7 @@
 # Human readable name of this type
 name: Services
 slug: services
-description: Used to identify Featured and regular Services that Canvas Innovations offers
+description: Used to identify Featured and Standard Services that Canvas Innovations offers
 label_field_name: title
 
 order_by: manually
@@ -25,7 +25,6 @@ fields:
     label: Title # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - featured:
@@ -36,7 +35,6 @@ fields:
     label: Featured image # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - brief: # The lowercase, underscored name of the field
@@ -47,12 +45,10 @@ fields:
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
-
 - description: # The lowercase, underscored name of the field
     label: Description # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
@@ -60,4 +56,10 @@ fields:
     label: Images
     type: many_to_many
     class_name: images
+    inverse_of: services
+
+- testimonials:
+    label: Testimonials
+    type: many_to_many
+    class_name: testimonials
     inverse_of: services

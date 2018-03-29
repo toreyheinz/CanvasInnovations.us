@@ -1,7 +1,7 @@
 # Human readable name of this type
 name: Projects
 slug: projects
-description: Complteted Projects with before and After pictures
+description: Completed Projects with Before and After pictures
 label_field_name: title
 
 order_by: manually
