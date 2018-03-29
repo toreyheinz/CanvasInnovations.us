@@ -48,7 +48,7 @@ is_layout: true
       </div>
     </div>
     <!-- End Top Bar -->
-    <div class="row column">
+    <div id="main" class="row column">
       {% block main %}
         <h1>{% editable_text "heading", line_break: false, format: 'raw', rows: 1 %}{% endeditable_text %}</h1>
         {% editable_text content %}Lorem ipsum{% endeditable_text %}
