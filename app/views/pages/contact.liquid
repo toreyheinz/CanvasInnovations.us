@@ -65,8 +65,28 @@ editable_elements:
                     <input name="content[phone]" required="true" type="tel" value="{{customer_message.phone}}">
                   </label>
                   <label>
-                    Full Address:
-                    <textarea name="content[address]" rows="2" required="true" >{{customer_message.address}}</textarea>
+                    <strong>Project Address:</strong>{% include 'required' %}
+                    <input class="thin" name="content[address]" required type="text" value="{{project_request.address}}">
+                    <fieldset class="row collapse">
+                      <div class="column small-6">
+                        <label>
+                          City:
+                          <input name="content[city]" required type="text" value="{{project_request.address}}">
+                        </label>
+                      </div>
+                      <div class="column small-2">
+                        <label>
+                          State:
+                          <input name="content[state]" required type="text" value="{{project_request.address}}">
+                        </label>
+                      </div>
+                      <div class="column small-4">
+                        <label>
+                          Zip:
+                          <input name="content[zip]" required type="text" value="{{project_request.address}}">
+                        </label>
+                      </div>
+                    </fieldset>
                   </label>
                   <label>
                     Message:
