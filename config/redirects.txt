@@ -1,0 +1,15 @@
+/welcome /
+/aboutus /about
+
+/marine-services/enclosures /services/boat-enclosures
+/marine-services/upholstery /services/upholstery
+/marine-services/tops /services/boat-tops
+/marine-services/covers /services/boat-covers
+/marine-services/bonded-windows /services/boat-windows
+/marine-services/carpet-services /services/boat-flooring
+/marine-services/dodgers /services/boat-dodgers
+/marine-services/misccustom /services/other
+/marine-services/custom-frame-bending
+/marine-services/repairs-and-restitching /services/repairs-and-restitching
+/marine-services/track
+

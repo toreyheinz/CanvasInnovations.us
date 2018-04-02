@@ -26,9 +26,9 @@ public_submission_enabled: true
 # public_submission_accounts: ['john@example.com']
 
 # Control the display of the content type in the back-office.
-# display_settings:
-#   seo: false              # display the SEO tab for the content entries
-#   advanced: false         # display the Advanced tab for the content entries
+display_settings:
+  seo: false              # display the SEO tab for the content entries
+  advanced: false         # display the Advanced tab for the content entries
 #   position: 1             # position in the sidebar menu
 #   hidden: false           # hidden for authors?
 
@@ -41,29 +41,39 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - email: # The lowercase, underscored name of the field
     label: Email # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - phone: # The lowercase, underscored name of the field
     label: Phone # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - address: # The lowercase, underscored name of the field
     label: Address # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
-    localized: false
+
+- city: # The lowercase, underscored name of the field
+    label: City # Human readable name of the field
+    type: string
+    required: false
+
+- state: # The lowercase, underscored name of the field
+    label: State # Human readable name of the field
+    type: string
+    required: false
+
+- zip: # The lowercase, underscored name of the field
+    label: Zip # Human readable name of the field
+    type: string
+    required: false
 
 - location: # The lowercase, underscored name of the field
     label: Location # Human readable name of the field
@@ -73,10 +83,9 @@ fields:
     localized: false
 
 - completion_date: # The lowercase, underscored name of the field
-    label: Completion date # Human readable name of the field
+    label: Requested Completion Date # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - project_description: # The lowercase, underscored name of the field
