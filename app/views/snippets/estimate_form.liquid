@@ -48,7 +48,7 @@
       <p class="help-text thin">When applicable include: Marina, Dock/Slip number, location on property, etc.</p>
       <textarea name="content[location]" rows="2">{{project_request.location}}</textarea>
     </label>
-    <label>
+<!--     <label>
       <strong>Services Required:</strong>{% include 'required' %}
       <fieldset class="service-checkboxes row medium-up-2">
         {% for service in contents.services %}
@@ -57,7 +57,7 @@
           </div>
         {% endfor %}
       </fieldset>
-    </label>
+    </label> -->
     <label>
      <strong> Work to be Completed:</strong>{% include 'required' %}
       <textarea class="autosize" name="content[project_description]" rows="6" required >{{project_request.project_description}}</textarea>
@@ -66,7 +66,7 @@
       When would you like your project completed by?
       <input name="content[completion_date]" type="date" >
     </label>
-    <fieldset class="row medium-up-2">
+<!--     <fieldset class="row medium-up-2">
       <div class="column">
         <label for="exampleFileUpload">
           <strong>First Attachment:</strong>
@@ -91,7 +91,7 @@
           <input type="file" id="exampleFileUpload">
         </label>
       </div>
-    </fieldset>
+    </fieldset> -->
   <div class="robot-warning hide callout text-center warning">
     Are you robot?
   </div>
