@@ -15,3 +15,15 @@ $('header[data-background-url]').each(function() {
 
 autosize($('textarea.autosize'));
 
+$(document).on('click', '.clickable', function() {
+  clickable = document.createElement('a');
+  clickable.href = $(this).data('url');
+
+  if (location.hostname !== clickable.hostname) {
+    window.open($(this).data('url'));
+  } else {
+    window.location.href = $(this).data('url');
+  }
+
+  return false;
+})

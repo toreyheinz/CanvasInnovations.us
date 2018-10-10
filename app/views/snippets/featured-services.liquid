@@ -2,7 +2,7 @@
     <div class="row">
         {% with_scope featured: true %} {% for service in contents.services %}
         <div class="columns medium-4">
-            <div class="card text-center">
+            <div class="card text-center clickable" data-url="{% path_to service %}">
                 <div class="card-divider">
                     <p class="lead"><a href="{% path_to service %}">{{ service.title }}</a></p>
                 </div>
