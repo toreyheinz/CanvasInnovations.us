@@ -75,11 +75,6 @@ fields:
     type: string
     required: false
 
-- location: # The lowercase, underscored name of the field
-    label: Location # Human readable name of the field
-    type: string
-    required: false
-    localized: false
 
 - boat_year:
     label: Boat Year
@@ -99,6 +94,24 @@ fields:
 
 - boat_name:
     label: Boat Name
+    type: string
+
+- location: # The lowercase, underscored name of the field
+    label: Current Location # Human readable name of the field
+    type: string
+    required: false
+    localized: false
+
+- marina_name:
+    label: Marina Name
+    type: string
+
+- slip_number:
+    label: Slip Number
+    type: string
+
+- building_number:
+    label: Building Number
     type: string
 
 - completion_date: # The lowercase, underscored name of the field

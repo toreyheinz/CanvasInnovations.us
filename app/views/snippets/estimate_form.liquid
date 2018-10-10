@@ -82,8 +82,30 @@
     </label>
     <label>
       <strong>Project Location:</strong>
-      <p class="help-text thin">When applicable include: Marina, Dock/Slip number, location on property, etc.</p>
-      <textarea name="content[location]" rows="2">{{project_request.location}}</textarea>
+      <fieldset class="row collapse">
+        <div class="column small-6">
+          <label>
+            Marina Name/Storage Unit
+            <input name="content[marina_name]" required type="text" value="{{project_request.marina_name}}">
+          </label>
+        </div>
+        <div class="column small-3">
+          <label>
+            Building#
+            <input name="content[building_number]" required type="text" value="{{project_request.building_number}}">
+          </label>
+        </div>
+        <div class="column small-3">
+          <label>
+            Slip#
+            <input name="content[slip_number]" required type="text" value="{{project_request.slip_number}}">
+          </label>
+        </div>
+      </fieldset>
+      <label>
+        Additional Details
+        <input name="content[location]" type="text" value="{{project_request.location}}">
+      </label>
     </label>
 
 <!--     <label>
