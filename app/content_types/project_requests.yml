@@ -79,8 +79,27 @@ fields:
     label: Location # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
+
+- boat_year:
+    label: Boat Year
+    type: integer
+
+- boat_length:
+    label: Boat Length
+    type: float
+
+- boat_brand:
+    label: Boat Brand
+    type: string
+
+- boat_model:
+    label: Boat Model
+    type: string
+
+- boat_name:
+    label: Boat Name
+    type: string
 
 - completion_date: # The lowercase, underscored name of the field
     label: Requested Completion Date # Human readable name of the field
@@ -92,7 +111,6 @@ fields:
     label: Project Description # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)
 
@@ -100,26 +118,22 @@ fields:
     label: Attachment 1 # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - attachment_2: # The lowercase, underscored name of the field
     label: Attachment 2 # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - attachment_3: # The lowercase, underscored name of the field
     label: Attachment 3 # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false
 
 - attachment_4: # The lowercase, underscored name of the field
     label: Attachment 4 # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
     localized: false

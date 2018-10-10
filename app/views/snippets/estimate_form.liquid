@@ -20,25 +20,62 @@
       <input name="content[phone]" required type="tel" value="{{project_request.phone}}">
     </label>
     <label>
-      <strong>Project Address:</strong>{% include 'required' %}
+      <strong>Your Address:</strong>{% include 'required' %}
       <input class="thin" name="content[address]" required type="text" value="{{project_request.address}}">
       <fieldset class="row collapse">
         <div class="column small-6">
           <label>
             City:
-            <input name="content[city]" required type="text" value="{{project_request.address}}">
+            <input name="content[city]" required type="text" value="{{project_request.city}}">
           </label>
         </div>
         <div class="column small-2">
           <label>
             State:
-            <input name="content[state]" required type="text" value="{{project_request.address}}">
+            <input name="content[state]" required type="text" value="{{project_request.state}}">
           </label>
         </div>
         <div class="column small-4">
           <label>
             Zip:
-            <input name="content[zip]" required type="text" value="{{project_request.address}}">
+            <input name="content[zip]" required type="text" value="{{project_request.zip}}">
+          </label>
+        </div>
+      </fieldset>
+    </label>
+    <label>
+      <strong>Boat Information:</strong>
+      <fieldset class="row collapse">
+        <div class="column small-3">
+          <label>
+            Year
+            <input name="content[boat_year]" required type="text" value="{{project_request.boat_year}}">
+          </label>
+        </div>
+        <div class="column small-3">
+          <label>
+            Length
+            <input name="content[boat_length]" required type="text" value="{{project_request.boat_length}}">
+          </label>
+        </div>
+        <div class="column small-6">
+          <label>
+            Brand
+            <input name="content[boat_brand]" required type="text" value="{{project_request.boat_brand}}">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="row collapse">
+        <div class="column small-6">
+          <label>
+            Model
+            <input name="content[boat_model]" required type="text" value="{{project_request.boat_model}}">
+          </label>
+        </div>
+        <div class="column small-6">
+          <label>
+            Name/Hull#
+            <input name="content[boat_name]" required type="text" value="{{project_request.boat_name}}">
           </label>
         </div>
       </fieldset>
@@ -48,6 +85,7 @@
       <p class="help-text thin">When applicable include: Marina, Dock/Slip number, location on property, etc.</p>
       <textarea name="content[location]" rows="2">{{project_request.location}}</textarea>
     </label>
+
 <!--     <label>
       <strong>Services Required:</strong>{% include 'required' %}
       <fieldset class="service-checkboxes row medium-up-2">
@@ -59,39 +97,39 @@
       </fieldset>
     </label> -->
     <label>
-     <strong> Work to be Completed:</strong>{% include 'required' %}
+     <strong>Project Description:</strong>{% include 'required' %}
       <textarea class="autosize" name="content[project_description]" rows="6" required >{{project_request.project_description}}</textarea>
     </label>
     <label>
       When would you like your project completed by?
       <input name="content[completion_date]" type="date" >
     </label>
-<!--     <fieldset class="row medium-up-2">
+    <fieldset class="row medium-up-2">
       <div class="column">
-        <label for="exampleFileUpload">
+        <label>
           <strong>First Attachment:</strong>
-          <input type="file" id="exampleFileUpload">
+          <input type="file" name="content[attachment_1]">
         </label>
       </div>
       <div class="column">
-        <label for="exampleFileUpload">
+        <label>
           <strong>Second Attachment:</strong>
-          <input type="file" id="exampleFileUpload">
+          <input type="file" name="content[attachment_2]">
         </label>
       </div>
       <div class="column">
-        <label for="exampleFileUpload">
+        <label>
           <strong>Third Attachment:</strong>
-          <input type="file" id="exampleFileUpload">
+          <input type="file" name="content[attachment_3]">
         </label>
       </div>
       <div class="column">
-        <label for="exampleFileUpload">
+        <label>
           <strong>Forth Attachment:</strong>
-          <input type="file" id="exampleFileUpload">
+          <input type="file" name="content[attachment_4]">
         </label>
       </div>
-    </fieldset> -->
+    </fieldset>
   <div class="robot-warning hide callout text-center warning">
     Are you robot?
   </div>
