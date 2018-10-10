@@ -83,11 +83,11 @@ fields:
 
 - boat_year:
     label: Boat Year
-    type: integer
+    type: string
 
 - boat_length:
     label: Boat Length
-    type: float
+    type: string
 
 - boat_brand:
     label: Boat Brand
