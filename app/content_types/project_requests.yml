@@ -37,6 +37,9 @@ display_settings:
 
 # A list describing each field
 fields:
+- captcha:
+    required: true
+    type: string
 - name: # The lowercase, underscored name of the field
     label: Name # Human readable name of the field
     type: string
@@ -96,23 +99,24 @@ fields:
     label: Boat Name
     type: string
 
-- location: # The lowercase, underscored name of the field
-    label: Current Location # Human readable name of the field
-    type: string
-    required: false
-    localized: false
 
 - marina_name:
     label: Marina Name
     type: string
 
 - slip_number:
-    label: Slip Number
+    label: Dock/Slip Number
     type: string
 
 - building_number:
     label: Building Number
     type: string
+
+- location: # The lowercase, underscored name of the field
+    label: Location Details # Human readable name of the field
+    type: string
+    required: false
+    localized: false
 
 - completion_date: # The lowercase, underscored name of the field
     label: Requested Completion Date # Human readable name of the field

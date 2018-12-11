@@ -52,6 +52,7 @@ editable_elements:
                   {% endfor %}
                   </ul>
                 {% endif %}
+                  <input id="captcha" name="content[captcha]" type="hidden">
                   <label>
                     Full Name:
                     <input name="content[name]" required="true" type="text"  value="{{customer_message.name}}">
@@ -120,6 +121,8 @@ editable_elements:
         if (grecaptcha.getResponse() == "") {
           e.preventDefault();
           $('.robot-warning').removeClass('hide')
+        } else if (grecaptcha.getResponse().length > 250) {
+          $('input#captcha')[0].val(grecaptcha.getResponse())
         }
       });
     });

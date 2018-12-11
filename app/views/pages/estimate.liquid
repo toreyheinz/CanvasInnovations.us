@@ -45,6 +45,8 @@ editable_elements:
         if (grecaptcha.getResponse() == "") {
           e.preventDefault();
           $('.robot-warning').removeClass('hide')
+        } else if (grecaptcha.getResponse().length > 250) {
+          $('input#captcha')[0].val(grecaptcha.getResponse())
         }
       });
     });
