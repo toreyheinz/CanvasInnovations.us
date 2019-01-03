@@ -46,7 +46,7 @@ editable_elements:
           e.preventDefault();
           $('.robot-warning').removeClass('hide')
         } else if (grecaptcha.getResponse().length > 250) {
-          $('input#captcha')[0].val(grecaptcha.getResponse())
+          $('input#captcha').val(grecaptcha.getResponse())
         }
       });
     });

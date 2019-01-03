@@ -37,6 +37,9 @@ display_settings:
 
 # A list describing each field
 fields:
+- captcha:
+    required: true
+    type: string
 - name: # The lowercase, underscored name of the field
     label: Name # Human readable name of the field
     type: string

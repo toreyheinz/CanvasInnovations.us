@@ -49,47 +49,50 @@ fields:
 - email: # The lowercase, underscored name of the field
     label: Email # Human readable name of the field
     type: string
-    required: false
+    required: true
     localized: false
 
 - phone: # The lowercase, underscored name of the field
     label: Phone # Human readable name of the field
     type: string
-    required: false
+    required: true
     localized: false
 
 - address: # The lowercase, underscored name of the field
     label: Address # Human readable name of the field
     type: string
-    required: false
+    required: true
 
 - city: # The lowercase, underscored name of the field
     label: City # Human readable name of the field
     type: string
-    required: false
+    required: true
 
 - state: # The lowercase, underscored name of the field
     label: State # Human readable name of the field
     type: string
-    required: false
+    required: true
 
 - zip: # The lowercase, underscored name of the field
     label: Zip # Human readable name of the field
     type: string
-    required: false
+    required: true
 
 
 - boat_year:
     label: Boat Year
     type: string
+    required: true
 
 - boat_length:
     label: Boat Length
     type: string
+    required: true
 
 - boat_brand:
     label: Boat Brand
     type: string
+    required: true
 
 - boat_model:
     label: Boat Model
@@ -103,6 +106,7 @@ fields:
 - marina_name:
     label: Marina Name
     type: string
+    required: true
 
 - slip_number:
     label: Dock/Slip Number
