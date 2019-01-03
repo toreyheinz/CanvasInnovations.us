@@ -54,15 +54,15 @@ editable_elements:
                 {% endif %}
                   <input id="captcha" name="content[captcha]" type="hidden">
                   <label>
-                    Full Name:
+                    Full Name:{% include 'required' %}
                     <input name="content[name]" required="true" type="text"  value="{{customer_message.name}}">
                   </label>
                   <label>
-                    Best Email:
+                    Best Email:{% include 'required' %}
                     <input name="content[email]" required="true" type="email"  value="{{customer_message.email}}">
                   </label>
                   <label>
-                    Your Phone:
+                    Your Phone:{% include 'required' %}
                     <input name="content[phone]" required="true" type="tel" value="{{customer_message.phone}}">
                   </label>
                   <label>
@@ -71,26 +71,26 @@ editable_elements:
                     <fieldset class="row collapse">
                       <div class="column small-6">
                         <label>
-                          City:
+                          City:{% include 'required' %}
                           <input name="content[city]" required type="text" value="{{project_request.address}}">
                         </label>
                       </div>
                       <div class="column small-2">
                         <label>
-                          State:
+                          State:{% include 'required' %}
                           <input name="content[state]" required type="text" value="{{project_request.address}}">
                         </label>
                       </div>
                       <div class="column small-4">
                         <label>
-                          Zip:
+                          Zip:{% include 'required' %}
                           <input name="content[zip]" required type="text" value="{{project_request.address}}">
                         </label>
                       </div>
                     </fieldset>
                   </label>
                   <label>
-                    Message:
+                    Message:{% include 'required' %}
                     <textarea name="content[message]" rows="4" required="true" >{{customer_message.message}}</textarea>
                   </label>
                   </tr>
