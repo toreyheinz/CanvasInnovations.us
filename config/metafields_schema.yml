@@ -10,3 +10,5 @@ contact_info:
       type: string
     email_address:
       type: string
+    hours:
+      type: text

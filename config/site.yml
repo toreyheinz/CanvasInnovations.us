@@ -12,4 +12,8 @@ metafields:
     simple_address: "11276 E. Lakewood Blvd., Holland, MI 49424"
     formatted_address: "11276 E. Lakewood Blvd.<br>Holland, MI 49424"
     email_address: "Sales@CanvasInnovations.us"
+    hours: "<strong>Hours of Operation:</strong><br>
+Monday through Friday,<br>
+8:00 AM to 5:00 PM <br>
+Saturdays by Appointment<br>"
 metafields_ui: {}
