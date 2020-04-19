@@ -52,7 +52,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.11.0.1)
       faraday (>= 0.7.4, < 1.0)
-    ffi (1.9.23)
+    ffi (1.12.2)
     formatador (0.2.5)
     guard (2.14.2)
       formatador (>= 0.2.4)
@@ -205,7 +205,6 @@ PLATFORMS
 DEPENDENCIES
   guard-livereload (~> 2.5.1)
   locomotivecms_wagon
-  rb-fsevent (~> 0.9.1)
 
 BUNDLED WITH
    1.16.1
