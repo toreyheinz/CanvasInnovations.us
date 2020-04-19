@@ -122,3 +122,23 @@ hr.thin {
   cursor: pointer;
 }
 
+
+blockquote.highlight {
+  margin-top: 1rem;
+  background-color: whitesmoke;
+  border-left: 5px solid #C01B28;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  padding: 1.25em 1.5em;
+
+  p {
+    color: #000000;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  a {
+      color: #C01B28;
+      cursor: pointer;
+      text-decoration: none;
+  }
+}
