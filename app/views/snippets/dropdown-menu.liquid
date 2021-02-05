@@ -4,7 +4,7 @@
       {% link_to 'services' %}
         <ul class="menu">
           {% for service in contents.services %}
-            <li>{% link_to service %}</li>
+            <li><a href="{% path_to service %}">{{ service.title }}</a></li>
           {% endfor %}
         </ul>
     </li>
